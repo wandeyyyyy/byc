@@ -1,0 +1,28 @@
+.row {
+  margin: 0 !important;
+}
+.largeScreenNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+width: 100%;
+margin-top: 10px;
+
+.aboutNdCart{
+  display: flex;
+  align-items: center;
+}
+}
+.mobileNav{
+  display: none;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .largeScreenNav{
+    display: none;
+  }
+  .mobileNav{
+    display: block;
+  }
+}

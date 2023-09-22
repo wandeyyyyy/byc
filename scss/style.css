@@ -1,0 +1,9 @@
+.row {
+  margin: 0 !important;
+}
+
+.largeScreenNav {
+  display: flex;
+  justify-items: space-around;
+  width: 90%;
+}/*# sourceMappingURL=style.css.map */
