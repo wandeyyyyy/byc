@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Poppins:wght@200;300;500&display=swap");
+* {
+  font-family: "Jost", sans-serif;
+}
+.navimg {
+  width: 20px;
+  margin: 10px 0 0 0;
+}
+.navs {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .navs {
+    display: block;
+  }
+  .navl {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
