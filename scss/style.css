@@ -1,9 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Jost", sans-serif;
+}
+
 .row {
   margin: 0 !important;
 }
 
 .largeScreenNav {
   display: flex;
-  justify-items: space-around;
-  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.largeScreenNav .largeIcon {
+  cursor: pointer;
+}
+.largeScreenNav .nav-link {
+  color: black;
+}
+.largeScreenNav .aboutNdCart {
+  display: flex;
+  align-items: center;
+}
+
+.mobileNav {
+  display: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+.mobileNav .smallIcon {
+  cursor: pointer;
+}
+
+.section1 {
+  width: 100%;
+  margin-top: 12%;
+}
+.section1 .section-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section1 .section-one .p1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.section1 .section-one .p2 {
+  font-size: 40px;
+  font-weight: 900;
+}
+.section1 .section-one .btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+.section1 .section-one .btns .button {
+  border: none;
+  width: 250px;
+  font-weight: 500;
+}
+.section1 .section-one .btns .button1 {
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+}
+.section1 .section-one .btns .button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid;
+  padding: 8px 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .largeScreenNav {
+    display: none;
+  }
+  .mobileNav {
+    display: block;
+  }
+  .section1 .btns {
+    flex-direction: column;
+  }
+  .section1 .btns .button {
+    max-width: 100%;
+  }
+  .section1 .btns .button1 {
+    margin-right: 0 !important;
+    margin-bottom: 5%;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,21 +1,113 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+body{
+  font-family: 'Jost', sans-serif;
+}
 .row {
   margin: 0 !important;
 }
+// nav starts
 .largeScreenNav{
     display: flex;
     justify-content: space-between;
     align-items: center;
 width: 100%;
 margin-top: 10px;
+font-size: 16px;
+font-weight: 500;
+.largeIcon{
+  cursor:  pointer;
+}
+.nav-link{
+color: black;
+}
 
 .aboutNdCart{
   display: flex;
   align-items: center;
 }
+
 }
 .mobileNav{
   display: none;
+font-size: 16px;
+font-weight: 500;
+
+.smallIcon{
+  cursor: pointer;
 }
+}
+// nav ends
+
+// section1 starts 
+.section1{
+  width: 100%;
+  margin-top: 12%;
+  .section-one{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ .p1{
+  font-size: 18px;
+  font-weight: 600;
+ }
+ .p2{
+  font-size: 40px;
+  font-weight:900;
+ }
+ .btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  .button{
+    border: none;
+ width: 250px;
+    font-weight: 500;
+
+  }
+  .button1{
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    &:hover{
+      background-color: rgba($color: #000000, $alpha: 0.92);
+      
+    }
+  }
+  .button2{
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    padding: 8px 0;
+    &:hover{
+      background-color: rgba($color: #000000, $alpha: 0.04);
+      
+    }
+  }
+ }
+  }
+}
+.section1-img{
+  width: 100%;
+  margin-top: 10%;
+  .img-section1{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+  }
+  .img1{
+    background: rgb(250, 248, 248);
+   width: 100%;
+  }
+}
+
+
+
+
 
 
 @media only screen and (max-width: 992px) {
@@ -25,4 +117,29 @@ margin-top: 10px;
   .mobileNav{
     display: block;
   }
+
+  // section1
+  .section1{
+   .btns{
+    flex-direction: column;
+  
+    .button{
+      width: 90vw !important;
+    }
+    .button1{
+      margin-right: 0 !important;
+      margin-bottom: 5%;
+     
+    }
+    
+   }
+  
+  }
+  .section1-img{
+    .img-section1{
+      flex-direction: column;
+    
+  }
+
+}
 }
