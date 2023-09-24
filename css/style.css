@@ -93,14 +93,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: end;
-  width: 50%;
 }
 .section1-img .img1 {
-  background: rgb(250, 248, 248);
+  background: #f1f1f1;
   width: 100%;
   display: flex;
   justify-content: center;
   box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.35);
+}
+.section1-img .img1 img {
+  width: 100%;
 }
 
 .section2 {
@@ -110,7 +112,20 @@ body {
   text-align: center;
   font-size: 28px;
   font-weight: 900;
-  margin-bottom: 5%;
+  margin-bottom: 7%;
+}
+.section2 .section2-underwear .boy {
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.section2 .section2-underwear img {
+  width: 100%;
+}
+.section2 .section2-underwear h3 {
+  margin-top: 7%;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 992px) {
@@ -138,6 +153,15 @@ body {
   .section1-img .img1 {
     margin-right: 0;
     margin-top: 10%;
+  }
+  .section2 .newArrival {
+    margin-top: 18%;
+  }
+  .section2 .section2-underwear {
+    flex-direction: column;
+  }
+  .section2 .imageA {
+    margin-bottom: 10%;
   }
 }
 @media only screen and (min-width: 1600px) {
