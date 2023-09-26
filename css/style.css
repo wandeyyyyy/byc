@@ -225,6 +225,94 @@ body {
   margin-top: 25px;
 }
 
+.viewBtn2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.viewBtn2 button {
+  color: black;
+  border: 3px solid;
+  padding: 7px 0;
+  width: 250px;
+  font-weight: 500;
+  background: white;
+}
+.viewBtn2 button:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.section4 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+.section4 .shopCategory h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.section4 .shopCategory .peopleundies, .section4 .shopCategory .undies {
+  display: flex;
+  justify-content: center;
+}
+.section4 .shopCategory .undies div p {
+  margin-top: 20%;
+  padding: 2px 25px;
+}
+.section4 .shopCategory .undies div {
+  display: flex;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.35);
+  margin: auto 0;
+}
+.section4 .shopCategory .undies div:hover {
+  background: #D7000F;
+  color: #fff;
+}
+
+.section5 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.section5 .sect5-img {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section5 .sect5-img .img5 {
+  background: #f1f1f1;
+}
+.section5 .sect5-img .img5 img {
+  width: 100%;
+}
+.section5 .sect5-img p {
+  font-size: 16px;
+  font-weight: 800;
+}
+.section5 .sect5-img p span {
+  font-weight: 400;
+}
+.section5 .sect5-img .price {
+  font-weight: 500;
+}
+.section5 .sectionfive .arr1, .section5 .sectionfive .arr2 {
+  position: absolute;
+  top: 20%;
+  cursor: pointer;
+}
+.section5 .sectionfive .arr2 {
+  right: 0;
+}
+.section5 .sectionfive .arr1 {
+  left: 0;
+}
+
 @media only screen and (max-width: 992px) {
   .largeScreenNav {
     display: none;
@@ -253,6 +341,7 @@ body {
   }
   .section2 .newArrival {
     margin-top: 18%;
+    font-size: 24px;
   }
   .section2 .section2-underwear {
     flex-direction: column;
@@ -275,6 +364,21 @@ body {
   }
   .pp2 {
     width: 100% !important;
+  }
+  .sectionthree5 {
+    margin-top: 7%;
+  }
+  .section4 .shopCategory .undies div p {
+    padding: 2px 15px;
+  }
+  .section5 {
+    display: block;
+    width: 100%;
+  }
+  .section5 .sect5-img {
+    flex-direction: column;
+    width: 90%;
+    align-items: normal;
   }
 }
 @media only screen and (min-width: 1600px) {
