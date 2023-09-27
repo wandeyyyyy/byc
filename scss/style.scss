@@ -3,12 +3,14 @@
 
 $bg-color: #f1f1f1;
 $buttonhover:#D7000F;
+$comment: var(--Gray-5, #E0E0E0);
 @mixin shadow($shadow: rgba(0,0,0) ){
 box-shadow:  1px 1px 3px 0 rgba($shadow, 0.35);
 }
 
 body{
   font-family: 'Jost', sans-serif;
+  box-sizing: border-box;
 }
 .row {
   margin: 0 !important;
@@ -280,8 +282,8 @@ line-height: 140%;
   justify-content: center;
   width: 100%;
   align-items: center;
-  margin-top: 10%;
-  margin-bottom: 15%;
+  margin-top: 7%;
+  margin-bottom: 12%;
   .shopCategory{
 h3{
 font-size: 32px;
@@ -316,6 +318,7 @@ font-weight: 700;
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 5%;
   .sect5-img{
     margin: 0 auto;
     width: 80%;
@@ -358,6 +361,27 @@ right: 0;
 }
 }
 
+// section6
+.section6{
+  width: 100%;
+  .sect-p1{
+  text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .sect6-img{
+    display: flex;
+    justify-content: center;
+    img{
+      width: 100%;
+    }
+  }
+
+  .image6{
+    background: $comment; 
+  }
+}
 
 
 
@@ -463,6 +487,9 @@ right: 0;
 width: 90%;
 align-items: normal;
 
+.sect{
+margin-right:  0 !important;
+}
   }
 }
 

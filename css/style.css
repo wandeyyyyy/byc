@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
 body {
   font-family: "Jost", sans-serif;
+  box-sizing: border-box;
 }
 
 .row {
@@ -247,8 +248,8 @@ body {
   justify-content: center;
   width: 100%;
   align-items: center;
-  margin-top: 10%;
-  margin-bottom: 15%;
+  margin-top: 7%;
+  margin-bottom: 12%;
 }
 .section4 .shopCategory h3 {
   font-size: 32px;
@@ -277,6 +278,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 5%;
 }
 .section5 .sect5-img {
   margin: 0 auto;
@@ -311,6 +313,25 @@ body {
 }
 .section5 .sectionfive .arr1 {
   left: 0;
+}
+
+.section6 {
+  width: 100%;
+}
+.section6 .sect-p1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+.section6 .sect6-img {
+  display: flex;
+  justify-content: center;
+}
+.section6 .sect6-img img {
+  width: 100%;
+}
+.section6 .image6 {
+  background: var(--Gray-5, #E0E0E0);
 }
 
 @media only screen and (max-width: 992px) {
@@ -379,6 +400,9 @@ body {
     flex-direction: column;
     width: 90%;
     align-items: normal;
+  }
+  .section5 .sect5-img .sect {
+    margin-right: 0 !important;
   }
 }
 @media only screen and (min-width: 1600px) {
