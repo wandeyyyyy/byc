@@ -322,6 +322,10 @@ body {
   text-align: center;
   font-size: 32px;
   font-weight: 700;
+  margin-bottom: 10%;
+}
+.section6 .sixcard {
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.35);
 }
 .section6 .sect6-img {
   display: flex;
@@ -332,6 +336,76 @@ body {
 }
 .section6 .image6 {
   background: var(--Gray-5, #E0E0E0);
+}
+.section6 .likeImg, .section6 .viewImg {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+.section6 .viewdiv {
+  margin-right: 30%;
+}
+.section6 .viewdiv, .section6 .likediv {
+  margin-top: 35%;
+}
+.section6 .d-text {
+  padding: 20px 30px;
+}
+.section6 .fashion {
+  display: flex;
+  font-size: 15px;
+  margin-top: 2%;
+}
+.section6 .firstText {
+  font-weight: 700;
+  margin-right: 10%;
+}
+.section6 .likeANDview {
+  margin-left: 10%;
+}
+.section6 h3 {
+  color: var(--gray-1000, #212121);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-top: 40px;
+}
+.section6 .ppp {
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--gray-900, #424242);
+}
+.section6 .sixbtn {
+  margin-top: 40px;
+  margin-bottom: 20%;
+}
+.section6 .sixbtn button {
+  border: 1px solid;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 10px;
+  background: #fff;
+}
+.section6 .sixbtn img {
+  margin-left: 10px;
+}
+.section6 .viewBtn3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.section6 .viewBtn3 button {
+  color: black;
+  border: 3px solid;
+  padding: 7px 0;
+  width: 250px;
+  font-weight: 500;
+  background: white;
+}
+.section6 .viewBtn3 button:hover {
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 @media only screen and (max-width: 992px) {
@@ -392,6 +466,9 @@ body {
   .section4 .shopCategory .undies div p {
     padding: 2px 15px;
   }
+  .section4 h3 {
+    margin: 20% 0;
+  }
   .section5 {
     display: block;
     width: 100%;
@@ -403,6 +480,17 @@ body {
   }
   .section5 .sect5-img .sect {
     margin-right: 0 !important;
+  }
+  .section5 .img5-1, .section5 .img5-2 {
+    display: none;
+  }
+  .section6 .sixcard1, .section6 .sixcard2, .section6 .sixcard3 {
+    margin-top: 10%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .viewdiv, .likediv {
+    flex-direction: column;
   }
 }
 @media only screen and (min-width: 1600px) {
