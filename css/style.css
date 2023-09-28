@@ -409,6 +409,14 @@ body {
   background-color: rgba(0, 0, 0, 0.04);
 }
 
+footer {
+  background: #212121;
+}
+
+.section-footer, .footer, .footer-container {
+  width: 100%;
+}
+
 @media only screen and (max-width: 992px) {
   .largeScreenNav {
     display: none;
@@ -477,19 +485,25 @@ body {
   .section5 .sect5-img {
     flex-direction: column;
     width: 90%;
-    align-items: normal;
   }
   .section5 .sect5-img .sect {
     margin-right: 0 !important;
+    width: 80%;
   }
   .section5 .img5-1, .section5 .img5-2 {
     display: none;
+  }
+  .section5 .viewBtn2 {
+    margin-top: 8%;
   }
   .section6 .sixcard1, .section6 .sixcard2, .section6 .sixcard3 {
     margin-top: 10%;
   }
   .section6 .sect-p1 {
     font-size: 24px;
+  }
+  .section6 .viewBtn3 {
+    margin-top: 10%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {

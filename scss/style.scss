@@ -469,6 +469,14 @@ color: black;
  
 }
 
+footer{
+background: #212121;;
+}
+.section-footer, .footer, .footer-container{
+  width: 100%;
+
+}
+
 
 
 
@@ -574,14 +582,20 @@ color: black;
   .sect5-img{
   flex-direction:column;
 width: 90%;
-align-items: normal;
+
 
 .sect{
 margin-right:  0 !important;
+width: 80%;
+
 }
   }
   .img5-1, .img5-2{
     display: none;
+  }
+
+  .viewBtn2{
+    margin-top: 8%;
   }
 }
 
@@ -593,6 +607,9 @@ margin-right:  0 !important;
   }
   .sect-p1{
     font-size: 24px;
+  }
+  .viewBtn3{
+    margin-top: 10%;
   }
 }
 }
