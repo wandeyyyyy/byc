@@ -381,11 +381,12 @@ body {
   margin-bottom: 20%;
 }
 .section6 .sixbtn button {
-  border: 1px solid;
+  border: 1px solid black;
   font-size: 15px;
   font-weight: 700;
   padding: 15px 10px;
   background: #fff;
+  color: black;
 }
 .section6 .sixbtn img {
   margin-left: 10px;
@@ -486,6 +487,9 @@ body {
   }
   .section6 .sixcard1, .section6 .sixcard2, .section6 .sixcard3 {
     margin-top: 10%;
+  }
+  .section6 .sect-p1 {
+    font-size: 24px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
