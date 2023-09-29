@@ -411,6 +411,24 @@ body {
 
 footer {
   background: #212121;
+  margin-top: 10%;
+}
+footer h6 {
+  font-weight: 700;
+}
+footer li {
+  list-style: none;
+}
+footer li a {
+  color: #fff;
+  font-size: 14px;
+}
+footer li a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+footer .payment-methods {
+  display: flex;
 }
 
 .section-footer, .footer, .footer-container {

@@ -471,6 +471,28 @@ color: black;
 
 footer{
 background: #212121;;
+margin-top: 10%;
+h6{
+  font-weight: 700;
+}
+
+  li{
+    list-style: none;
+
+    a{
+    color: #fff;
+    font-size: 14px;
+    &:hover{
+      text-decoration: none;
+      color: #fff;
+   
+    }
+    }
+  }
+  .payment-methods{
+    display: flex;
+  }
+
 }
 .section-footer, .footer, .footer-container{
   width: 100%;
