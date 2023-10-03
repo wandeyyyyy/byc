@@ -47,6 +47,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+.section1 .section-one #rotatingHeading {
+  color: rgb(168, 7, 7);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7), 1px 2px 1px rgb(255, 0, 0);
+  font-size: 52px;
+}
 .section1 .section-one .p1 {
   font-size: 18px;
   font-weight: 600;
@@ -504,14 +509,18 @@ footer .copy {
 .heading {
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin: 12% auto;
+  padding: 0 10px;
+  margin: 12% 0;
 }
-.heading h1 {
-  color: #212121;
+.heading .glitch {
+  border-right: 5px solid;
   font-size: 48px;
+  width: 550px;
+  white-space: nowrap;
+  overflow: hidden;
   font-weight: 700;
   text-align: center;
+  animation: typing 2.5s steps(20), cursor 0.4s step-end infinite alternate;
 }
 
 .secondblog, .thirdblog {
@@ -537,6 +546,9 @@ footer .copy {
   width: 20px;
   margin-right: 5px;
 }
+.section1-blog .image6 {
+  background: #fcfcfc;
+}
 .section1-blog .viewdiv {
   margin-right: 30%;
 }
@@ -551,14 +563,17 @@ footer .copy {
   font-size: 15px;
   margin-top: 2%;
   width: 300px;
+  margin-bottom: 0 !important;
 }
 .section1-blog .firstText {
   font-weight: 700;
   margin-right: 5%;
   width: 100%;
+  margin-bottom: 0 !important;
 }
 .section1-blog .secondtext {
   width: 100%;
+  margin-bottom: 0 !important;
 }
 .section1-blog .likeANDview {
   margin-left: 30%;
@@ -571,7 +586,7 @@ footer .copy {
   position: absolute;
 }
 .section1-blog .blog-sect .fashion-sect {
-  bottom: -2.5%;
+  bottom: 0;
   left: 0;
 }
 .section1-blog .blog-sect h3 {
@@ -585,11 +600,20 @@ footer .copy {
   left: 0;
   text-align: justify;
   font-size: 16px;
-  line-height: 20px;
   color: #424242;
   font-weight: 400;
 }
 
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
 @media only screen and (max-width: 992px) {
   .largeScreenNav {
     display: none;
@@ -694,8 +718,12 @@ footer .copy {
   footer .social-icon {
     width: 60%;
   }
+  .heading .glitch {
+    font-size: 28px;
+    width: 320px;
+  }
   .section1-blog .blog-sect {
-    height: 480px;
+    height: 500px;
     margin-top: 5%;
   }
   .section1-blog .blog-sect .textnread {
@@ -710,13 +738,14 @@ footer .copy {
   .section6 .viewdiv, .section6 .likediv {
     flex-direction: column;
   }
-  .section1-blog .blog-sect {
-    height: 400px;
-    margin-top: 5%;
+  .section1-blog .blog-img1 {
+    height: 500px;
   }
-  .section1-blog .sect2 {
-    display: flex;
-    flex-direction: column-reverse;
+  .section1-blog .blog-sect {
+    height: 500px;
+  }
+  .section1-blog .blog-sect .textnread {
+    line-height: 20px;
   }
 }
 @media only screen and (min-width: 1600px) {

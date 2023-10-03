@@ -67,6 +67,13 @@ font-weight: 500;
  flex-direction: column;
  justify-content: center;
  align-items: center;
+ #rotatingHeading{
+  color: rgb(168, 7, 7);
+  text-shadow: 
+  1px 1px 5px rgba(0,0,0,0.7),
+  1px 2px 1px rgba(255,0,0,1);
+ font-size: 52px;
+ }
  .p1{
   font-size: 18px;
   font-weight: 600;
@@ -113,6 +120,7 @@ font-weight: 500;
   width: 100%;
   margin-top: 10%;
   margin-bottom: 10%;
+
   .img-section1{
     display: flex;
     justify-content: center;
@@ -576,15 +584,20 @@ hr{
 .heading{
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin: 12% auto;
-  h1{
-    color: #212121;
+  padding: 0 10px;
+  margin: 12% 0;
+  .glitch{
+  border-right: 5px solid;
 font-size: 48px;
+width: 550px;
+white-space: nowrap;
+overflow: hidden;
 font-weight: 700;
 text-align: center;
+animation: typing 2.5s steps(20), cursor .4s step-end infinite alternate;
   }
 }
+
 .secondblog, .thirdblog{
   margin-top: 15%;
 }
@@ -606,6 +619,9 @@ button{
   width: 20px;
   margin-right: 5px;
  }
+ .image6{
+  background: #fcfcfc;
+ }
 .viewdiv{
  margin-right: 30%;
 }
@@ -620,16 +636,18 @@ button{
  font-size: 15px; 
  margin-top: 2%;
  width: 300px;
+ margin-bottom: 0 !important;
 
 }
 .firstText{
  font-weight: 700;
  margin-right: 5%;
  width: 100%;
+ margin-bottom: 0 !important;
 }
 .secondtext{
   width: 100%;
- 
+  margin-bottom: 0 !important;
 }
 
 .likeANDview{
@@ -644,7 +662,7 @@ height: 100%;
   position: absolute;
  }
  .fashion-sect{
-bottom:  -2.5%;
+bottom:  0;
 left: 0;
  }
 
@@ -660,17 +678,29 @@ left: 0;
 left: 0;
 text-align: justify;
 font-size: 16px;
-line-height: 20px;
+
 color: #424242;
 font-weight: 400;
  }
 }
 }
 
+@keyframes cursor{
+  50%{
+    border-color: transparent;
+  }
 
 
+}
 
 
+@keyframes typing{
+  from{
+    width: 0;
+  }
+
+
+}
 @media only screen and (max-width: 992px) {
   .largeScreenNav{
     display: none;
@@ -823,12 +853,21 @@ footer{
 }
 
 // blog styling begins
+
+.heading{
+  .glitch{
+    font-size: 28px;
+    width: 320px;
+  }
+}
 .section1-blog{
+  
   .blog-sect{
-    height: 480px;
+    height: 500px;
  margin-top: 5%;
  .textnread{
   padding: 10px 0;
+
  }
   }
   .sect2{
@@ -848,15 +887,16 @@ flex-direction: column;
    }
   }
    .section1-blog{
+    .blog-img1{
+      height: 500px;
+    }
     .blog-sect{
-      height: 400px;
-      margin-top: 5%;
-    
+      height: 500px;
+    .textnread{
+      line-height: 20px;
     }
-    .sect2{
-      display: flex;
-      flex-direction: column-reverse;
     }
+ 
    }
 }
 
