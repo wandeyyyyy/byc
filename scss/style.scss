@@ -9,6 +9,14 @@ $smalltextcolor: var(--gray-900, #424242);
 @mixin shadow($shadow: rgba(0,0,0) ){
 box-shadow:  1px 1px 3px 0 rgba($shadow, 0.35);
 }
+@mixin reset-more{
+  border: 1px solid black;
+  font-size: 15px;
+  font-weight: 700;
+padding: 10px;
+background: #fff;
+color: black;
+}
 
 body{
   font-family: 'Jost', sans-serif;
@@ -279,6 +287,8 @@ line-height: 140%;
  }
 }
 
+// section 4
+
 .section4{
   display: flex;
   justify-content: center;
@@ -294,6 +304,7 @@ font-weight: 700;
   .peopleundies, .undies{
     display: flex;
   justify-content: center;
+
   }
  .undies div p{
    margin-top: 20%;
@@ -301,7 +312,7 @@ font-weight: 700;
   }
   .undies div{
     display: flex;
-
+transition: 0.3s;
   cursor: pointer;
     @include shadow;
     margin: auto 0;
@@ -312,10 +323,19 @@ font-weight: 700;
   }
 
   }
+  .pple{
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+    cursor: pointer;
+    height: 25px;
+    &:hover{
+      border-bottom: 2px solid black;
+      }
+  }
 }
 
 
-// secction5
+// section5
 .section5{
   width: 100%;
   display: flex;
@@ -390,10 +410,7 @@ right: 0;
   .likeImg, .viewImg{
    height: 20px;
    width: 20px;
-
-
    margin-right: 5px;
-
   }
  .viewdiv{
   margin-right: 30%;
@@ -415,7 +432,7 @@ right: 0;
  }
 
  .likeANDview{
-  margin-left: 10%;
+  margin-left: 15%;
 
  }
  h3{
@@ -435,13 +452,7 @@ right: 0;
   margin-top: 40px;
   margin-bottom: 20%;
   button{
-    border: 1px solid black;
-    font-size: 15px;
-    font-weight: 700;
-padding: 15px 10px;
-background: #fff;
-color: black;
-
+   @include reset-more;
   }
   img{
     margin-left: 10px;
@@ -525,7 +536,7 @@ h6{
   }
 .social-icon{
   display: flex;
-  width: 30%;
+  width: 20%;
   margin: 0 auto;
   margin-top: 5%;
   .social-icons{
@@ -548,7 +559,7 @@ align-items: center;
 hr{
   background: #fff;
   width: 78%;
-  height: 3px;
+  height: 1px;
    }
    .copy{
     font-size: 12px;
@@ -557,6 +568,103 @@ hr{
 .section-footer, .footer, .footer-container{
   width: 100%;
 
+}
+
+
+
+// blog styling begins
+.heading{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 12% auto;
+  h1{
+    color: #212121;
+font-size: 48px;
+font-weight: 700;
+text-align: center;
+  }
+}
+.secondblog, .thirdblog{
+  margin-top: 15%;
+}
+
+.section1-blog{
+  .blog-img1{
+    width: 100%;
+  
+  }
+
+button{
+  @include reset-more;
+  .arr{
+    margin-left: 10px;
+  }
+}
+.likeImg, .viewImg{
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+ }
+.viewdiv{
+ margin-right: 30%;
+}
+.viewdiv, .likediv{
+ margin-top: 35%;
+}
+.d-text{
+ padding: 20px 30px;
+}
+.fashion{
+ display: flex;
+ font-size: 15px; 
+ margin-top: 2%;
+ width: 300px;
+
+}
+.firstText{
+ font-weight: 700;
+ margin-right: 5%;
+ width: 100%;
+}
+.secondtext{
+  width: 100%;
+ 
+}
+
+.likeANDview{
+ margin-left: 30%;
+
+}  
+.blog-sect{
+ position: relative;
+
+height: 100%;
+ h3, .textnread, .fashion-sect{
+  position: absolute;
+ }
+ .fashion-sect{
+bottom:  -2.5%;
+left: 0;
+ }
+
+ h3{
+  top:0;
+  left:0;
+  font-size: 24px;
+  font-weight: 700;
+ }
+ .textnread{
+
+  top:12%;
+left: 0;
+text-align: justify;
+font-size: 16px;
+line-height: 20px;
+color: #424242;
+font-weight: 400;
+ }
+}
 }
 
 
@@ -713,12 +821,42 @@ footer{
 
   }
 }
+
+// blog styling begins
+.section1-blog{
+  .blog-sect{
+    height: 480px;
+ margin-top: 5%;
+ .textnread{
+  padding: 10px 0;
+ }
+  }
+  .sect2{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 }
 
 
-@media only screen  and (min-width: 992px) and (max-width: 1200px){
+@media only screen  and (min-width: 992px) and (max-width: 1200px)
+{
+  .section6{
+
   .viewdiv, .likediv{
 flex-direction: column;
+   }
+  }
+   .section1-blog{
+    .blog-sect{
+      height: 400px;
+      margin-top: 5%;
+    
+    }
+    .sect2{
+      display: flex;
+      flex-direction: column-reverse;
+    }
    }
 }
 
@@ -728,4 +866,18 @@ flex-direction: column;
     width: 100%;
    } 
   }
+
+
+
+
+  // blog styling
+  .section1-blog{
+    .blog-sect{
+    .textnread{
+    top: 30%;
+    }
+  }
+  }
+
+
 }
