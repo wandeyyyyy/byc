@@ -518,7 +518,7 @@ footer .copy {
   width: 550px;
   white-space: nowrap;
   overflow: hidden;
-  font-weight: 700;
+  font-weight: 900;
   text-align: center;
   animation: typing 2.5s steps(20), cursor 0.4s step-end infinite alternate;
 }
@@ -614,6 +614,35 @@ footer .copy {
     width: 0;
   }
 }
+.slider-sec .down-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 90px;
+}
+.slider-sec .down-slider img {
+  height: 100%;
+  padding: 16px 20px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.slider-sec .down-slider .slide-numbers {
+  display: flex;
+  gap: 10px;
+}
+.slider-sec .down-slider .slide-numbers h4 {
+  background: #fff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.1s linear;
+  border: white;
+}
+.slider-sec .down-slider .slide-numbers h4:hover {
+  border: 2px solid #fb8200;
+}
+
 @media only screen and (max-width: 992px) {
   .largeScreenNav {
     display: none;
@@ -719,8 +748,9 @@ footer .copy {
     width: 60%;
   }
   .heading .glitch {
-    font-size: 28px;
-    width: 320px;
+    border-right: none;
+    animation: none;
+    white-space: wrap;
   }
   .section1-blog .blog-sect {
     height: 500px;
