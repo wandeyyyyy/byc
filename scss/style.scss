@@ -1008,11 +1008,11 @@ footer{
   .glitch{
     border-right: none;
   animation: none;
-  white-space: wrap;
+  white-space: wrap !important;
   }
 }
 .section1-blog{
-  
+ margin-top: 25%; 
   .blog-sect{
     height: 500px;
  margin-top: 5%;
