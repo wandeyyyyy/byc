@@ -6,6 +6,9 @@ $buttonhover:#D7000F;
 $comment: var(--Gray-5, #E0E0E0);
 $boldcolor:  var(--gray-1000, #212121);
 $smalltextcolor: var(--gray-900, #424242);
+$yearcolor: var(--byc-red, #D7000F);
+
+
 @mixin shadow($shadow: rgba(0,0,0) ){
 box-shadow:  1px 1px 3px 0 rgba($shadow, 0.35);
 }
@@ -24,6 +27,10 @@ body{
 }
 .row {
   margin: 0 !important;
+}
+.fixed-top{
+  background: white;
+  padding-bottom: 10px;
 }
 // nav starts
 .largeScreenNav{
@@ -58,6 +65,8 @@ font-weight: 500;
 }
 // nav ends
 
+
+// landing page
 // section1 starts 
 .section1{
   width: 100%;
@@ -577,7 +586,7 @@ hr{
   width: 100%;
 
 }
-
+// landing page ends
 
 
 // blog styling begins
@@ -739,7 +748,7 @@ font-weight: 400;
   }
 }
 
-
+// blog styling ends
 
 // readmore blogs
 
@@ -765,6 +774,83 @@ color: var(--gray-900, #424242);
     }
   }
 }
+
+
+// readmore blog ends
+
+// about page begins
+
+.heading{
+  .about{
+    font-weight: 900;
+    color: #212121;
+    font-size: 48px;
+  }
+}
+
+.section1-about{
+
+  img{
+    width: 100%;
+    background: $bg-color;
+    @include shadow;
+  }
+  .flex-about{
+    display: flex;
+    align-items: center;
+  }
+  h3{
+    font-size: 36px;
+    font-weight: 700;
+  
+  }
+  .about-text{
+    font-size: 22px;
+    font-weight: 400;
+  }
+}
+.section2-about{
+  h1{
+  text-align: center;
+  font-weight: 900;
+  color: #212121;
+  font-size: 40px;
+width: 100%;
+margin: 12% 0;
+  }
+
+  .aboutdiv{
+    background: rgba(189, 58, 58, 0.04);
+box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.06);
+height: 330px;
+position: relative;
+
+  .inside-about{
+    padding: 20px 10px;
+  }
+  h6{
+    position: absolute;
+    font-size: 16px;
+    font-weight: 400;
+    color: #383737;
+    top:45%;
+  }
+  p{
+    position: absolute;
+    color: $yearcolor;
+font-size: 26px;;
+font-weight: 700;
+text-shadow: 1px 1px 2px black;
+bottom: 2%;
+  }
+  img{
+    position: absolute;
+    top:2%;
+
+  }
+}
+}
+
 @media only screen and (max-width: 992px) {
   .largeScreenNav{
     display: none;
@@ -940,6 +1026,28 @@ footer{
     flex-direction: column-reverse;
   }
 }
+
+
+// about styling
+.about-sec{
+  margin-top: 25px;
+}
+.section1-about{
+  h3{
+    text-align: center;
+    margin: 15% 0;
+  }
+  .about-text{
+    text-align: center;
+    margin: 10% 0;
+  }
+}
+.section2-about{
+  h1{
+    font-size: 36px;
+  }
+}
+
 }
 
 
