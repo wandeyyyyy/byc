@@ -8,5 +8,7 @@ function rotateWord(){
    currentWordIndex = (currentWordIndex + 1) % words.length;
 }
 
-rotateWord();
+rotateWord() ;
 setInterval(rotateWord, 2000);
+
+
