@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 body {
   font-family: "Jost", sans-serif;
   box-sizing: border-box;
@@ -737,6 +738,13 @@ footer .copy {
   border-radius: 10px;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
 }
+.about-lastsection .lastsec h6 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.about-lastsection .lastsec .byc {
+  font-weight: 400;
+}
 .about-lastsection .flex-review {
   display: flex;
   justify-content: space-between;
@@ -785,10 +793,11 @@ footer .copy {
 .about-lastsection .product1, .about-lastsection .product2, .about-lastsection .product3, .about-lastsection .product4, .about-lastsection .product5 {
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.5s ease;
   margin: 0 6px;
 }
 .about-lastsection .product1:hover, .about-lastsection .product2:hover, .about-lastsection .product3:hover, .about-lastsection .product4:hover, .about-lastsection .product5:hover {
-  box-shadow: 0 2px 5px lightgrey;
+  box-shadow: 0 2px 10px lightgrey;
 }
 .about-lastsection .productImg {
   border-top-right-radius: 5px;
@@ -796,6 +805,23 @@ footer .copy {
 }
 .about-lastsection .pricingAndStar {
   padding: 20px 10px;
+}
+.about-lastsection .fashion {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--gray-50, #787885);
+}
+.about-lastsection .price {
+  font-weight: 600;
+  font-size: 14px;
+}
+.about-lastsection .rate {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.about-lastsection .rate p {
+  margin-bottom: 0 !important;
 }
 
 @media only screen and (max-width: 480px) {
