@@ -430,7 +430,7 @@ body {
 
 footer {
   background: #212121;
-  margin-top: 15%;
+  margin-top: 10%;
   padding: 50px 0;
 }
 footer h6 {
@@ -729,6 +729,80 @@ footer .copy {
   top: 2%;
 }
 
+.about-lastsection {
+  margin-top: 12%;
+}
+.about-lastsection .lastsec {
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+}
+.about-lastsection .flex-review {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 3px solid #f1eeee;
+  padding-bottom: 15px;
+}
+.about-lastsection .flex-review .review {
+  font-size: 16px;
+  font-weight: 900;
+  margin: 0 !important;
+}
+.about-lastsection .flex-review .see {
+  color: var(--brand-colour-1, #BD3A3A);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 !important;
+}
+.about-lastsection .see-Img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.about-lastsection .see-Img .angle-right {
+  font-size: 20px;
+}
+.about-lastsection .products {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  width: 100%;
+}
+.about-lastsection .products img {
+  width: 100%;
+}
+.about-lastsection .starNum {
+  display: flex;
+  align-items: center;
+}
+.about-lastsection .star {
+  display: flex;
+  margin-right: 20px;
+}
+.about-lastsection .product1, .about-lastsection .product2, .about-lastsection .product3, .about-lastsection .product4, .about-lastsection .product5 {
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 6px;
+}
+.about-lastsection .product1:hover, .about-lastsection .product2:hover, .about-lastsection .product3:hover, .about-lastsection .product4:hover, .about-lastsection .product5:hover {
+  box-shadow: 0 2px 5px lightgrey;
+}
+.about-lastsection .productImg {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.about-lastsection .pricingAndStar {
+  padding: 20px 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  .about-lastsection .product1, .about-lastsection .product2, .about-lastsection .product3 {
+    display: none;
+  }
+}
 @media only screen and (max-width: 992px) {
   .largeScreenNav {
     display: none;
@@ -865,6 +939,9 @@ footer .copy {
   }
   .section2-about h1 {
     font-size: 36px;
+  }
+  .about-lastsection .product1, .about-lastsection .product2 {
+    display: none;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {

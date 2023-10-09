@@ -12,3 +12,4 @@ rotateWord() ;
 setInterval(rotateWord, 2000);
 
 
+

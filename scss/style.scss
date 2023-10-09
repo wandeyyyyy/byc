@@ -7,7 +7,7 @@ $comment: var(--Gray-5, #E0E0E0);
 $boldcolor:  var(--gray-1000, #212121);
 $smalltextcolor: var(--gray-900, #424242);
 $yearcolor: var(--byc-red, #D7000F);
-
+$redcolor:  var(--brand-colour-1, #BD3A3A);
 
 @mixin shadow($shadow: rgba(0,0,0) ){
 box-shadow:  1px 1px 3px 0 rgba($shadow, 0.35);
@@ -497,7 +497,7 @@ right: 0;
 
 footer{
 background: #212121;;
-margin-top: 15%;
+margin-top: 10%;
 padding: 50px 0;
 h6{
   font-weight: 700;
@@ -587,7 +587,7 @@ hr{
 // landing page ends
 
 
-// blog styling begins
+// blog styling begins.....................................
 .heading{
   display: flex;
   justify-content: center;
@@ -748,7 +748,7 @@ font-weight: 400;
 
 // blog styling ends
 
-// readmore blogs
+// readmore blogs..........................................
 
 .main-section{
 margin-bottom: 7%;
@@ -776,7 +776,7 @@ color: var(--gray-900, #424242);
 
 // readmore blog ends
 
-// about page begins
+// about page begins........................................
 
 .heading{
   .about{
@@ -848,6 +848,93 @@ bottom: 2%;
   }
 }
 }
+.about-lastsection{
+  margin-top: 12%;
+  .lastsec{
+    padding: 50px 20px;
+  border-radius: 10px;
+
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+  }
+ 
+  .flex-review{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+   
+    border-bottom: 3px solid #f1eeee;
+  padding-bottom: 15px;
+
+    .review{
+font-size: 16px;
+font-weight: 900;
+margin: 0 !important;
+
+    }
+    .see{
+color: $redcolor;
+font-size: 16px;
+font-weight: 500;
+margin: 0 !important;
+    }
+  }
+  .see-Img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   .angle-right{
+      font-size: 20px;
+    }
+  }
+  .products{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  .starNum{
+    display: flex;
+    align-items: center;
+ 
+  }
+.star{
+  display: flex;
+  margin-right: 20px;
+}
+.product1, .product2, .product3, .product4, .product5{
+border-radius: 10px;
+cursor: pointer;
+margin: 0 6px;
+&:hover{
+  box-shadow: 0 2px 5px lightgrey;
+  
+  }
+}
+.productImg{
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.pricingAndStar{
+  padding: 20px 10px;
+}
+}
+
+
+@media only screen and (max-width: 480px){
+.about-lastsection{
+  .product1, .product2, .product3{
+    display: none;
+  }
+}
+
+
+}
+
 
 @media only screen and (max-width: 992px) {
   .largeScreenNav{
@@ -1046,7 +1133,13 @@ footer{
   }
 }
 
+.about-lastsection{
+  .product1, .product2{
+    display: none;
+  }
 }
+}
+
 
 
 @media only screen  and (min-width: 992px) and (max-width: 1200px)
