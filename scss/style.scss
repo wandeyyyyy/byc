@@ -854,7 +854,7 @@ bottom: 2%;
 }
 }
 .about-lastsection{
-  margin-top: 12%;
+  margin-top: 10%;
   .lastsec{
     padding: 50px 20px;
   border-radius: 10px;
@@ -985,7 +985,44 @@ text-align: center;
 }
 }
 
-@media only screen and (max-width: 480px){
+.contact-section2{
+  .form{
+    margin-top: 30px;
+  }
+.dropmessage{
+    font-size: 48px;
+    font-weight: 700;
+  }
+  form{
+    width: 100%;
+    input, textarea{
+      width: 100%;
+      border-radius: 8px;
+border: 1px solid $redcolor;
+padding: 8px 10px;
+&:focus{
+  outline: none;
+}
+
+
+    }
+    label{
+      font-weight: 600;
+      font-size: 14px;
+    
+    }
+    .submitBTN{
+      background: $redcolor;
+      color: #fff;
+      padding: 10px 0;
+      font-weight: 400;
+      &:hover{
+        background: #D7000F;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 576px){
 .about-lastsection{
   .product1, .product2, .product3{
     display: none;
@@ -1203,6 +1240,13 @@ footer{
 .contact-section1{
   .contact-flex1{
   margin-top: 5%;
+  }
+}
+.contact-section2{
+  .dropmessage{
+    text-align: center;
+    font-size: 40px;
+
   }
 }
 }

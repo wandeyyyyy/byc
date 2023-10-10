@@ -720,7 +720,7 @@ footer .copy {
 }
 
 .about-lastsection {
-  margin-top: 12%;
+  margin-top: 10%;
 }
 .about-lastsection .lastsec {
   padding: 50px 20px;
@@ -842,7 +842,40 @@ footer .copy {
   padding: 50px 10px;
 }
 
-@media only screen and (max-width: 480px) {
+.contact-section2 .form {
+  margin-top: 30px;
+}
+.contact-section2 .dropmessage {
+  font-size: 48px;
+  font-weight: 700;
+}
+.contact-section2 form {
+  width: 100%;
+}
+.contact-section2 form input, .contact-section2 form textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--brand-colour-1, #BD3A3A);
+  padding: 8px 10px;
+}
+.contact-section2 form input:focus, .contact-section2 form textarea:focus {
+  outline: none;
+}
+.contact-section2 form label {
+  font-weight: 600;
+  font-size: 14px;
+}
+.contact-section2 form .submitBTN {
+  background: var(--brand-colour-1, #BD3A3A);
+  color: #fff;
+  padding: 10px 0;
+  font-weight: 400;
+}
+.contact-section2 form .submitBTN:hover {
+  background: #D7000F;
+}
+
+@media only screen and (max-width: 576px) {
   .about-lastsection .product1, .about-lastsection .product2, .about-lastsection .product3 {
     display: none;
   }
@@ -984,6 +1017,10 @@ footer .copy {
   }
   .contact-section1 .contact-flex1 {
     margin-top: 5%;
+  }
+  .contact-section2 .dropmessage {
+    text-align: center;
+    font-size: 40px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
