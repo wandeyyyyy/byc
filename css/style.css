@@ -515,17 +515,12 @@ footer .copy {
   display: flex;
   justify-content: center;
   padding: 0 10px;
-  margin: 12% 0;
+  margin: 10% 0;
 }
 .heading .glitch {
-  border-right: 5px solid;
   font-size: 48px;
-  width: 550px;
-  white-space: nowrap;
-  overflow: hidden;
   font-weight: 900;
   text-align: center;
-  animation: typing 2.5s steps(20), cursor 0.4s step-end infinite alternate;
 }
 
 .secondblog, .thirdblog {
@@ -545,6 +540,10 @@ footer .copy {
 }
 .section1-blog button .arr {
   margin-left: 10px;
+}
+.section1-blog button a {
+  text-decoration: none;
+  color: #000000;
 }
 .section1-blog .likeImg, .section1-blog .viewImg {
   height: 20px;
@@ -609,16 +608,6 @@ footer .copy {
   font-weight: 400;
 }
 
-@keyframes cursor {
-  50% {
-    border-color: transparent;
-  }
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
 .slider-sec .down-slider {
   display: flex;
   justify-content: center;
@@ -808,7 +797,7 @@ footer .copy {
 }
 .about-lastsection .fashion {
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   color: var(--gray-50, #787885);
 }
@@ -822,6 +811,35 @@ footer .copy {
 }
 .about-lastsection .rate p {
   margin-bottom: 0 !important;
+}
+
+.contact-section1 h1 {
+  font-size: 48px;
+  margin: 12% 0;
+  font-weight: 700;
+  text-align: center;
+}
+.contact-section1 .map {
+  width: 100%;
+}
+.contact-section1 .contact-flex {
+  display: flex;
+  align-items: center;
+}
+.contact-section1 .contact-flex p {
+  margin: 0 !important;
+  font-size: 14px;
+  font-family: 400;
+  line-height: 20px;
+}
+.contact-section1 .contacts {
+  font-size: 20px;
+  font-weight: 700;
+}
+.contact-section1 .sub-section {
+  margin: 10% 0;
+  background: #FBFBFB;
+  padding: 50px 10px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -933,11 +951,6 @@ footer .copy {
   footer .social-icon {
     width: 60%;
   }
-  .heading .glitch {
-    border-right: none;
-    animation: none;
-    white-space: wrap !important;
-  }
   .section1-blog {
     margin-top: 25%;
   }
@@ -968,6 +981,9 @@ footer .copy {
   }
   .about-lastsection .product1, .about-lastsection .product2 {
     display: none;
+  }
+  .contact-section1 .contact-flex1 {
+    margin-top: 5%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {

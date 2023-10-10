@@ -593,16 +593,16 @@ hr{
   display: flex;
   justify-content: center;
   padding: 0 10px;
-  margin: 12% 0;
+  margin: 10% 0;
   .glitch{
-  border-right: 5px solid;
+  // border-right: 5px solid;
 font-size: 48px;
-width: 550px;
-white-space: nowrap;
-overflow: hidden;
+// width: 550px;
+// white-space: nowrap;
+// overflow: hidden;
 font-weight: 900;
 text-align: center;
-animation: typing 2.5s steps(20), cursor .4s step-end infinite alternate;
+// animation: typing 2.5s steps(20), cursor .4s step-end infinite alternate;
   }
 }
 
@@ -620,6 +620,10 @@ button{
   @include reset-more;
   .arr{
     margin-left: 10px;
+  }
+  a{
+    text-decoration: none;
+    color: #000000;
   }
 }
 .likeImg, .viewImg{
@@ -693,21 +697,21 @@ font-weight: 400;
 }
 }
 
-@keyframes cursor{
-  50%{
-    border-color: transparent;
-  }
+// @keyframes cursor{
+//   50%{
+//     border-color: transparent;
+//   }
 
 
-}
+// }
 
 
-@keyframes typing{
-  from{
-    width: 0;
-  }
+// @keyframes typing{
+//   from{
+//     width: 0;
+//   }
 
-}
+// }
 
 
 .slider-sec{
@@ -933,7 +937,7 @@ margin: 0 6px;
 }
 .fashion{
   font-family: 'Inter', sans-serif;
-font-weight: 400;
+font-weight: 500;
 font-size: 12px;
 color: var(--gray-50, #787885);
 }
@@ -949,7 +953,37 @@ p{
 }
 }
 }
-
+// contact styling begins............................................
+.contact-section1{
+  h1{
+    font-size: 48px;
+    margin: 12% 0;
+font-weight: 700;
+text-align: center;
+}
+.map{
+  width: 100%;
+}
+.contact-flex{
+  display: flex;
+  align-items: center;
+  p{
+    margin: 0 !important;
+    font-size: 14px;
+    font-family: 400;
+    line-height: 20px;
+  }
+}
+.contacts{
+  font-size: 20px;
+  font-weight: 700;
+}
+.sub-section{
+  margin: 10% 0;
+  background: #FBFBFB;
+  padding: 50px 10px;
+}
+}
 
 @media only screen and (max-width: 480px){
 .about-lastsection{
@@ -1115,13 +1149,14 @@ footer{
 
 // blog styling begins
 
-.heading{
-  .glitch{
-    border-right: none;
-  animation: none;
-  white-space: wrap !important;
-  }
-}
+// .heading{
+//   .glitch{
+//     border-right: none;
+//   animation: none;
+//   white-space: wrap !important;
+//   width: 100%;
+//   }
+// }
 .section1-blog{
  margin-top: 25%; 
   .blog-sect{
@@ -1162,6 +1197,12 @@ footer{
 .about-lastsection{
   .product1, .product2{
     display: none;
+  }
+}
+
+.contact-section1{
+  .contact-flex1{
+  margin-top: 5%;
   }
 }
 }
