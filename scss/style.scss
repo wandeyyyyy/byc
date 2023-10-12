@@ -74,17 +74,28 @@ body{
   background: white;
   padding-bottom: 10px;
 }
+
 // nav starts
+
+// wishlist html nav
+.wishlist-navbar{
+  background:  #2F2F2F !important;
+}
+.fixed-top-wishlist{
+  background: none;
+}
+// wishlist end
 .largeScreenNav{
     display: flex;
     justify-content: space-between;
     align-items: center;
 width: 100%;
-margin-top: 10px;
+padding: 10px 0;
 font-size: 16px;
 font-weight: 500;
 .largeIcon{
   cursor:  pointer;
+  margin-right: 20px;
 }
 .nav-link{
 color: black;
