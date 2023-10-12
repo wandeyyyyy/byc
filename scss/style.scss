@@ -21,6 +21,47 @@ padding: 10px;
 background: #fff;
 color: black;
 }
+@mixin grid{
+  border-radius: 4px;
+      background: #ffffff;
+      box-shadow: 0px 2px 4px 0px rgba(41, 121, 255, 0.24), 0px 1px 2px 0px rgba(27, 78, 163, 0.24);
+}
+@mixin list{
+  border-radius: 2px;
+  background: rgba(189, 58, 58, 0.06);
+}
+@mixin wishNcart{
+  padding: 5px 0;
+  font-size: 14px;
+  width: 50%;
+  border: 2px solid $redcolor;
+  border-radius: 5px;
+  background: #ffffff;
+  color: $redcolor;
+  font-weight: 600;
+}
+@mixin wishlist{
+  margin: 20px 0 10px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body{
   font-family: 'Jost', sans-serif;
@@ -879,7 +920,7 @@ h6{
   padding-bottom: 15px;
 
     .review{
-font-size: 16px;
+font-size: 18px;
 font-weight: 900;
 margin: 0 !important;
 
@@ -1049,6 +1090,13 @@ padding: 0;
     cursor: pointer;
   }
 }
+
+.boxers-fieldset{
+  border: 1px solid $redcolor !important;
+  legend,h6{
+    color: #BD3A3A;
+  }
+}
 .main-allproducts{
   .allproducts2, .allproducts3{
     margin-top: 5%;
@@ -1064,23 +1112,15 @@ padding: 0;
 padding: 10px 30px;
     }
     .list{
-      border-radius: 2px;
-background: rgba(189, 58, 58, 0.06);
+@include list;
     }
     .grid{
-      border-radius: 4px;
-      background: #ffffff;
-      box-shadow: 0px 2px 4px 0px rgba(41, 121, 255, 0.24), 0px 1px 2px 0px rgba(27, 78, 163, 0.24);
+      @include grid;
     }
   }
   .product1,.product2,.product3,.product4,.product5{
   .wishlist{
-    margin: 20px 0 10px 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2;
+ @include wishlist;
   visibility: hidden;
   }
   &:hover .wishlist{
@@ -1088,14 +1128,7 @@ background: rgba(189, 58, 58, 0.06);
   }
 }
   .btn-wish, .btn-shoppingcart{
-    padding: 5px 0;
-    font-size: 14px;
-    width: 50%;
-    border: 2px solid $redcolor;
-    border-radius: 5px;
-    background: #ffffff;
-    color: $redcolor;
-    font-weight: 600;
+@include wishNcart;
    
     &:hover{
       background: $redcolor;
@@ -1107,12 +1140,17 @@ color: #ffffff !important;
   }
 
 }
+.slider-section{
+  margin-top: 150px;
+}
 .mid-allproducts{
   display: none;
 }
 .mobile-allproducts{
   display: none;
 }
+
+
 @media only screen and (max-width: 768px){
 .about-lastsection{
   .product1, .product2, .product3{
@@ -1128,13 +1166,59 @@ color: #ffffff !important;
 
 .mobile-allproducts{
   display: block !important;
+  padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
   .product5, .product4{
     .productImg{
       width: 100%;
     }
   }
-}
+  h6{
+    font-size: 16px;
+    font-weight: 700;
 
+    .byc{
+font-weight: 400;
+    }
+  }
+  .gridAndList{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 3px solid #f1eeee;
+    .list, .grid{
+padding: 10px 30px;
+    }
+    .list{
+@include list;
+    }
+    .grid{
+      @include grid;
+    }
+  } 
+}
+.mobile-row{
+  margin-top: 50px;
+}
+.wishlist{
+  @include wishlist;
+}
+.btn-wish, .btn-shoppingcart{
+  @include wishNcart;
+  &:hover{
+    background: $redcolor;
+    color: #f1f1f1;
+    &:hover .fa-heart, .fa-cart-shopping{
+color: #ffffff !important;
+    }
+  }
+
+}
+.slider-section{
+  margin-top: 50px;
+}
 }
 
 
@@ -1395,12 +1479,7 @@ background: rgba(189, 58, 58, 0.06);
   }
   .product1,.product2,.product3,.product4,.product5{
   .wishlist{
-    margin: 20px 0 10px 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2;
+@include wishlist;
   visibility: hidden;
   }
   &:hover .wishlist{
@@ -1408,14 +1487,7 @@ background: rgba(189, 58, 58, 0.06);
   }
 }
   .btn-wish, .btn-shoppingcart{
-    padding: 5px 0;
-    font-size: 14px;
-    width: 50%;
-    border: 2px solid $redcolor;
-    border-radius: 5px;
-    background: #ffffff;
-    color: $redcolor;
-    font-weight: 600;
+@include wishNcart;
    
     &:hover{
       background: $redcolor;
@@ -1429,10 +1501,20 @@ color: #ffffff !important;
     margin-top: 50px;
   }
 
-  
+  h6{
+    font-size: 16px;
+    font-weight: 700;
+
+    .byc{
+font-weight: 400;
+    }
+  }
 }
 .mobile-allproducts{
   display: none;
+}
+.slider-section{
+  margin-top: 100px;
 }
 }
 
