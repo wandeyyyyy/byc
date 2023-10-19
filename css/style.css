@@ -979,6 +979,116 @@ fieldset .sold {
   display: none;
 }
 
+.section-checkout1 {
+  margin: 10% 0;
+}
+.section-checkout1 .shorts {
+  width: 20%;
+}
+.section-checkout1 h3 {
+  font-weight: 700;
+  font-size: 26px;
+}
+.section-checkout1 .flexshorts {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.section-checkout1 .clickBtn {
+  border: none;
+  background: #fff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  padding: 8px 15px;
+  cursor: pointer;
+}
+.section-checkout1 .checkout-section {
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+  padding: 50px 0;
+}
+.section-checkout1 .menboxer {
+  width: 100%;
+}
+.section-checkout1 .counter {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.section-checkout1 .counter button {
+  border: none;
+}
+.section-checkout1 .counter .plus, .section-checkout1 .counter .minus {
+  color: white;
+  padding: 6px 20px;
+  background: var(--brand-colour-1, #BD3A3A);
+  margin-right: 20px;
+}
+.section-checkout1 .counter .minus {
+  margin-left: 20px;
+}
+.section-checkout1 .counter .wish-list {
+  width: 225px;
+  padding: 6px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--brand-colour-1, #BD3A3A);
+  background: #fff;
+  color: var(--brand-colour-1, #BD3A3A);
+  font-size: 18px;
+  font-weight: 500;
+}
+.section-checkout1 .love {
+  width: 20px;
+  margin-right: 20px;
+  color: blue !important;
+}
+.section-checkout1 hr {
+  background: #f1eeee;
+}
+.section-checkout1 .sizeandcolour {
+  display: flex;
+  margin: 40px 0;
+}
+.section-checkout1 .sizeandcolour .available {
+  font-weight: 600;
+}
+.section-checkout1 .sizeandcolour img {
+  width: 35px;
+}
+.section-checkout1 .sizeandcolour .size {
+  margin-right: 50px;
+}
+.section-checkout1 .sizeandcolour .size button {
+  border: none;
+  background: #fff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 2px solid white;
+}
+.section-checkout1 .sizeandcolour .size button:hover {
+  border: 2px solid #fb8200;
+}
+.section-checkout1 .starNum {
+  display: flex;
+}
+.section-checkout1 .starNum .rate {
+  margin-left: 20px;
+}
+.section-checkout1 .addCart {
+  width: 400px;
+  background: var(--brand-colour-1, #BD3A3A);
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  margin: 40px 0;
+}
+
 @media only screen and (max-width: 768px) {
   .about-lastsection .product1, .about-lastsection .product2, .about-lastsection .product3 {
     display: none;
