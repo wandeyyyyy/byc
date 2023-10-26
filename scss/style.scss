@@ -48,6 +48,12 @@ color: black;
   justify-content: space-between;
 
 }
+@mixin box-shadowpadding{
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+padding: 50px 10px;
+}
 
 
 
@@ -575,12 +581,12 @@ h6{
 
 .input-img-div{
   border: 1px solid white;
-  width: 250px;
+  width: 230px;
 }
   input{
     border: none;
-    padding: 8px 10px;
-    width: 220px;
+    padding: 8px 0 !important;
+  width: 80%;
     outline: none;
     background: #212121;
     caret-color: #fff;
@@ -1164,7 +1170,7 @@ color: #ffffff !important;
 // checkout .....................
 .section-checkout1{
 
-  margin: 10% 0;
+  margin: 7% 0;
   .shorts{
     width: 20%;
   }
@@ -1185,10 +1191,7 @@ margin: 20px 0;
     cursor: pointer;
   }
   .checkout-section{
-  border-radius: 10px;
-background: #FFF;
-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
-padding: 50px 0;
+@include box-shadowpadding;
   }
   .menboxer{
     width: 100%;
@@ -1277,14 +1280,161 @@ color: blue !important;
 margin: 40px 0;
   }
 }
+.section-checkout2{
+  margin:7% 0;
+  .checkout-section{
+@include box-shadowpadding;
+padding: 40px 20px;
+  }
+  h2{
+    padding: 20px 0;
+    border-bottom: 2px solid #f1eeee;
+    font-weight: 700;
+  }
+  h6{
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
+
+
+
+.section-custReview{
+  .customerRev{
+    padding: 20px 12px;
+    border-bottom: 2px solid #f1eeee;
+    font-weight: 700;
+  }
+  .flexreviewsect{
+    margin-top: 8%;
+  }
+  .flexreview{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom:2px solid #f1eeee;
+    .proreview{
+      font-weight: 400;
+      margin: 0 !important;
+      padding: 10px 15px;
+    }
+.see-Img{
+  display: flex;
+  align-items: center;
+  .see{
+    margin-bottom: 0;
+    color: #BD3A3A;
+  }
+
+  
+}
+    img{
+      width: 20px;
+    }
+  }
+  .proRate{
+    font-weight: 400;
+    padding: 15px 0px 30px 12px;
+  }
+
+  .checkout-section{
+  @include box-shadowpadding;
+  }
+  .starRate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+    width: 35%;
+    height: 200px;
+    border-radius: 10px;
+background: #F8F5F5;
+  }
+  .rate{
+  font-weight: 700;
+
+  }
+  .classrate{
+    width: 40%;
+    margin-top: 15px;
+  }
+  .rates{
+    display: flex;
+align-items: center;
+width: 100%;
+justify-content: space-around;
+margin-top: 5px;
+    p{
+      margin: 0 !important;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .con{
+      width: 100px;
+      height: 7px;
+      border-radius: 35px;
+      background-color: #efefef;
+      .bar{
+        height: 7px;
+        border-radius: 36px;
+        background: #FB8200;
+      }
+      .bar5{
+        width: 70%;
+      }
+      .bar4{
+        width: 60%;
+      }
+      .bar3{
+        width: 50%;
+      }
+      .bar2{
+        width: 40%;
+      }
+      .bar1{
+        width: 30%;
+      }
+  
+  
+    }
+  }
+  .revHead{
+
+font-weight: 700;
+
+  }
+  .revText{
+    font-weight: 400;
+    color: #787885;
+  }
+  .revSect{
+    padding-bottom: 50px;
+    border-bottom: 2px solid #f1eeee;
+  }
+  .revSec{
+    padding-top: 20px;
+    padding-left: 15px ;
+  }
+  .revPerson{
+    margin-left: 20px;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+}
+
 
 
 @media only screen and (max-width: 768px){
+ 
 .about-lastsection{
   .product1, .product2, .product3{
     display: none;
   }
 }
+
 .main-allproducts{
   display: none;
 }
@@ -1346,6 +1496,11 @@ color: #ffffff !important;
 }
 .slider-section{
   margin-top: 50px;
+}
+.section-custReview{
+  .starRate{
+    width: 100%;
+  }
 }
 }
 
@@ -1643,6 +1798,38 @@ font-weight: 400;
 }
 .slider-section{
   margin-top: 100px;
+}
+
+.section-checkout1 {
+.addCart{
+  width: 100%;
+margin-top: -10px !important;
+}
+.sizeandcolour{
+  margin-top: 15px !important;
+.size button{
+  padding: 6px;
+  font-size: 10px;
+  
+}
+ img{
+  width: 28px;
+ }
+}
+.counter{
+  display: block;
+   .wish-list{
+  width: 100%;
+}
+}
+.plusMinus{
+margin-top: -20px !important;
+ align-items: center;
+ margin-bottom: 10px;
+ .plus,.minus{
+  padding: 4px 10px;
+ }
+}
 }
 }
 
