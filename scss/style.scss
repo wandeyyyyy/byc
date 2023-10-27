@@ -585,7 +585,7 @@ h6{
 }
   input{
     border: none;
-    padding: 8px 0 !important;
+    padding: 8px !important;
   width: 80%;
     outline: none;
     background: #212121;
@@ -1319,7 +1319,7 @@ padding: 40px 20px;
     .proreview{
       font-weight: 400;
       margin: 0 !important;
-      padding: 10px 15px;
+    font-size: 16px;
     }
 .see-Img{
   display: flex;
@@ -1338,6 +1338,7 @@ padding: 40px 20px;
   .proRate{
     font-weight: 400;
     padding: 15px 0px 30px 12px;
+    font-size: 16px;
   }
 
   .checkout-section{
@@ -1368,15 +1369,17 @@ width: 100%;
 justify-content: space-around;
 margin-top: 5px;
     p{
-      margin: 0 !important;
+   margin-bottom: 0 !important;
       font-size: 18px;
       font-weight: 700;
+      margin-left: 10px;
     }
     .con{
       width: 100px;
       height: 7px;
       border-radius: 35px;
       background-color: #efefef;
+      margin-left: 10px;
       .bar{
         height: 7px;
         border-radius: 36px;
@@ -1422,6 +1425,11 @@ font-weight: 700;
     margin-left: 20px;
     font-size: 14px;
     margin-top: 4px;
+  }
+  .rowstar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 

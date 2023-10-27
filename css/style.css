@@ -466,7 +466,7 @@ footer .input-img-div {
 }
 footer input {
   border: none;
-  padding: 8px 0 !important;
+  padding: 8px !important;
   width: 80%;
   outline: none;
   background: #212121;
@@ -1129,7 +1129,7 @@ fieldset .sold {
 .section-custReview .flexreview .proreview {
   font-weight: 400;
   margin: 0 !important;
-  padding: 10px 15px;
+  font-size: 16px;
 }
 .section-custReview .flexreview .see-Img {
   display: flex;
@@ -1145,6 +1145,7 @@ fieldset .sold {
 .section-custReview .proRate {
   font-weight: 400;
   padding: 15px 0px 30px 12px;
+  font-size: 16px;
 }
 .section-custReview .checkout-section {
   border-radius: 10px;
@@ -1177,15 +1178,17 @@ fieldset .sold {
   margin-top: 5px;
 }
 .section-custReview .rates p {
-  margin: 0 !important;
+  margin-bottom: 0 !important;
   font-size: 18px;
   font-weight: 700;
+  margin-left: 10px;
 }
 .section-custReview .rates .con {
   width: 100px;
   height: 7px;
   border-radius: 35px;
   background-color: #efefef;
+  margin-left: 10px;
 }
 .section-custReview .rates .con .bar {
   height: 7px;
@@ -1226,6 +1229,11 @@ fieldset .sold {
   margin-left: 20px;
   font-size: 14px;
   margin-top: 4px;
+}
+.section-custReview .rowstar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 768px) {
