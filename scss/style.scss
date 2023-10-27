@@ -1221,12 +1221,18 @@ background: #fff;
 color: $redcolor;
  font-size: 18px;
  font-weight: 500;
- 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ p{
+  padding: 0 !important;
+  margin:  0 !important;
+ }
     }
   }
   .love{
     width: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
 color: blue !important;
   }
   hr{
@@ -1433,6 +1439,67 @@ font-weight: 700;
   }
 }
 
+
+
+// cart items
+
+.section-cartItem{
+  margin-top: 7%;
+  .cart-sect{
+@include box-shadowpadding;
+  }
+  .cart{
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 0;
+    border-bottom: 2px solid #f1eeee;
+  }
+  h3{
+    font-weight: 700;
+    font-size: 26px;
+  }
+  .menbox{
+    width: 100%;
+  }
+  .QuantPrice{
+    display: flex;
+  }
+  button{
+    border: none;
+  }
+  .cotton, .wishDel{
+    margin-top: 8%;
+  }
+  .wishDel{
+display: flex;
+justify-content: space-between;
+  }
+  .wish, .del{
+    width: 48%;
+    border-radius: 10px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    p{
+      padding: 0 !important;
+      margin:  0 !important;
+      color: $redcolor;
+    }
+  }
+  .wish{
+    border: 1px solid $redcolor;
+    background: #ffffff;
+  }
+  .del{
+    background: $redcolor;
+  }
+
+  .heart, .delete{
+    width: 18px;
+  }
+}
 
 
 @media only screen and (max-width: 768px){
