@@ -1447,6 +1447,7 @@ font-weight: 700;
   margin-top: 7%;
   .cart-sect{
 @include box-shadowpadding;
+padding:  20px;
   }
   .cart{
     font-weight: 700;
@@ -1499,6 +1500,63 @@ justify-content: space-between;
   .heart, .delete{
     width: 18px;
   }
+  .plus, .minus{
+    color: white;
+    padding: 6px 14px;
+    background: $redcolor;
+  }
+  .plus{
+    margin-right: 15px;
+  }
+  .minus{
+    margin-left: 15px;
+  }
+  .quantity{
+    margin-right: 30px;
+    text-align: center;
+  }
+  .price{
+    margin-top: 20px;
+font-size: 18px;
+
+font-weight: 700;
+  }
+  .plusMinus{
+    margin-top: 16px;
+  }
+  .quantity, .unitPrice{
+    border-left: 2px solid #f1eeee;
+    padding: 0 20px 50px 20px;
+  }
+  .cartt{
+    border-bottom: 2px solid #f1eeee;
+    padding: 50px 0;
+   }
+   .cartTotal{
+    font-weight: 700;
+    font-size: 26px;
+
+   }
+   .shop{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    button{
+border: none;
+      padding: 8px 0;
+      width: 48%;
+      border-radius: 10px;
+    }
+    .contShop{
+      border: 1px solid $redcolor;
+      background: #ffffff;
+      color: $redcolor;
+    }
+    .checkout{
+      background: $redcolor;
+      color: #ffffff;
+    }
+   }
 }
 
 
