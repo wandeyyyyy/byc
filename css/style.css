@@ -1246,6 +1246,9 @@ fieldset .sold {
 .section-cartItem {
   margin-top: 7%;
 }
+.section-cartItem .cartsection {
+  margin: 30px 0;
+}
 .section-cartItem .cart-sect {
   border-radius: 10px;
   background: #FFF;
@@ -1688,6 +1691,31 @@ fieldset .sold {
   }
   .section-checkout1 .plusMinus .plus, .section-checkout1 .plusMinus .minus {
     padding: 4px 10px;
+  }
+  .section-cartItem .menbox {
+    margin: 50px 0;
+  }
+  .section-cartItem .quantity {
+    border: none;
+  }
+  .section-cartItem .shop {
+    display: block;
+    margin-top: 10px;
+  }
+  .section-cartItem .shop .contShop, .section-cartItem .shop .checkout {
+    width: 100%;
+  }
+  .section-cartItem .shop .contShop {
+    margin: 10px 0;
+  }
+  .section-cartItem .wishDel {
+    display: block;
+  }
+  .section-cartItem .wishDel .wish, .section-cartItem .wishDel .del {
+    width: 100%;
+  }
+  .section-cartItem .wish {
+    margin: 10px 0;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
