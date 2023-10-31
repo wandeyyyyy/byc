@@ -1467,6 +1467,7 @@ padding:  20px;
   }
   .QuantPrice{
     display: flex;
+    width: 100%;
   }
   button{
     border: none;
@@ -1515,7 +1516,7 @@ justify-content: space-between;
     margin-left: 15px;
   }
   .quantity{
-    margin-right: 30px;
+  margin-right: 10px;
     text-align: center;
   }
   .price{
@@ -1529,11 +1530,11 @@ font-weight: 700;
   }
   .quantity, .unitPrice{
     border-left: 2px solid #f1eeee;
-    padding: 0 20px 50px 20px;
+    padding: 0 10px 50px 10px;
   }
   .cartt{
     border-bottom: 2px solid #f1eeee;
-    padding: 50px 0;
+    padding: 50px 5px;
    }
    .cartTotal{
     font-weight: 700;
@@ -1560,8 +1561,77 @@ border: none;
       color: #ffffff;
     }
    }
-  
+   .total{
+    font-weight: 700;
+   }
+   .subTot{
+    border-left: 2px solid #f1eeee;
+    padding: 20px;
+   }
+   .subtotal{
+    border-bottom: 2px solid #f1eeee;
+   }
+   .cartOrder{
+    border-bottom:  2px solid #f1eeee;
+   }
+   .shipping{
+    padding: 30px 0;
+   }
+
+   .form{
+    margin: 30px 0;
+   input{
+    width: 80%;
+    border-radius: 8px;
+    border: 1px solid $redcolor;
+    padding: 8px 10px;
+    outline: none;
+   }
+   label{
+    font-weight: 600;
+    font-size: 14px;
+   }
+   .submitButton{
+    background: $redcolor;
+    color: #ffffff;
+    font-weight: 400;
+&:hover{
+  background: $buttonhover;
 }
+   }
+   }
+   .checkoutform{
+    border-radius: 10px;
+background: #FFF8F8;
+padding: 20px;
+margin: 30px 0;
+   }
+   .paymentdetails{
+    background: #ffffff;
+    color: #9F9F9F;
+    font-size: 14px;
+    margin: 0 20px;
+    font-weight: 400;
+    p{
+      padding: 10px 20px;
+    }
+
+   }
+   input[type="radio"]{
+    transform: scale(1.5);
+    background:red;
+    border-color: $redcolor;
+   }
+   .pay{
+    font-weight: 400;
+   }
+   .data{
+   font-size: 14px;
+   font-weight: 400;
+   padding: 20px;
+   }
+}
+
 
 
 @media only screen and (max-width: 768px){
@@ -1967,6 +2037,7 @@ margin-top: -20px !important;
   padding: 4px 10px;
  }
 }
+
 }
 
 
@@ -1974,9 +2045,13 @@ margin-top: -20px !important;
 .section-cartItem{
   .menbox{
     margin: 50px 0;
+    width: 100% !important;
+  }
+  .quantity, .unitPrice{
+    border: none;
   }
   .quantity{
-    border: none;
+    margin-right: 5px;
   }
   .shop{
     display: block;
@@ -1997,6 +2072,26 @@ margin-top: -20px !important;
   .wish{
     margin: 10px 0;
   }
+  .cartt{
+    padding: 0;
+    width: 100%;
+  }
+ .QuantPrice{
+  justify-content: start;
+ }
+ .modCart{
+  width: 100%;
+ }
+ .payMed{
+  width: 80%;
+  text-align: center;
+  margin: 0 20px;
+ }
+ .form{
+  input{
+    width: 100%;
+  }
+}
 }
 }
 
