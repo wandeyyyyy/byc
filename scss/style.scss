@@ -113,6 +113,13 @@ color: black;
 }
 
 }
+.navBtn{
+  border: none !important;
+  background: white;
+}
+.btnnav{
+  background: #2f2f2f;
+}
 .mobileNav{
   display: none;
 font-size: 16px;
@@ -2172,10 +2179,15 @@ margin-top: -20px !important;
 .subTot{
   border: none;
 }
-}
 .createAcct{
   margin-top: 70px;
 }
+.accountSect{
+  padding: 50px 20px;
+}
+}
+
+
 }
 
 

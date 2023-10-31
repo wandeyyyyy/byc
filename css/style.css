@@ -44,6 +44,15 @@ body {
   align-items: center;
 }
 
+.navBtn {
+  border: none !important;
+  background: white;
+}
+
+.btnnav {
+  background: #2f2f2f;
+}
+
 .mobileNav {
   display: none;
   font-size: 16px;
@@ -1880,8 +1889,11 @@ fieldset .sold {
   .section-cartItem .subTot {
     border: none;
   }
-  .createAcct {
+  .section-cartItem .createAcct {
     margin-top: 70px;
+  }
+  .section-cartItem .accountSect {
+    padding: 50px 20px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
