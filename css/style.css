@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 body {
@@ -1429,6 +1430,75 @@ fieldset .sold {
   font-weight: 400;
   padding: 20px;
 }
+.section-cartItem .placeOrder {
+  width: 100%;
+}
+.section-cartItem .h3 {
+  border-bottom: 2px solid #f1eeee;
+  padding-bottom: 20px;
+}
+.section-cartItem .checks {
+  margin-top: 15%;
+}
+.section-cartItem .login .forgot {
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+}
+.section-cartItem .login input {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--brand-colour-1, #BD3A3A);
+  padding: 8px 10px;
+  outline: none;
+}
+.section-cartItem .login input[type=password] {
+  font-weight: 900;
+}
+.section-cartItem .login .remember p {
+  padding-top: 13px;
+}
+.section-cartItem .login .remember .checkk {
+  width: auto;
+}
+.section-cartItem .login input[type=checkbox] {
+  display: none;
+}
+.section-cartItem .login input[type=checkbox] + label:before {
+  content: "✔";
+  display: inline-block;
+  margin-right: 5px;
+  width: 18px;
+  height: 20px;
+  border: 1px solid var(--brand-colour-1, #BD3A3A);
+  color: #fff;
+}
+.section-cartItem .login input[type=checkbox]:checked + label:before {
+  background-color: var(--brand-colour-1, #BD3A3A);
+  color: #fff;
+}
+.section-cartItem .lOgin {
+  width: 100%;
+}
+.section-cartItem .lOgin:hover {
+  background: #D7000F;
+}
+.section-cartItem .create {
+  margin: 50px auto;
+  width: 60%;
+  font-weight: 400;
+}
+.section-cartItem .buttonCreate {
+  position: absolute;
+  top: 80%;
+}
+.section-cartItem .createAcct {
+  position: relative;
+  height: 354px;
+}
+.section-cartItem .accountSect {
+  padding: 100px 20px;
+}
 
 @media only screen and (max-width: 768px) {
   .about-lastsection .product1, .about-lastsection .product2, .about-lastsection .product3 {
@@ -1806,6 +1876,12 @@ fieldset .sold {
   }
   .section-cartItem .form input {
     width: 100%;
+  }
+  .section-cartItem .subTot {
+    border: none;
+  }
+  .createAcct {
+    margin-top: 70px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
