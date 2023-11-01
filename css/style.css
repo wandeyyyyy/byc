@@ -1488,6 +1488,8 @@ fieldset .sold {
 }
 .section-cartItem .lOgin {
   width: 100%;
+  font-weight: 700;
+  font-size: 12px;
 }
 .section-cartItem .lOgin:hover {
   background: #D7000F;
