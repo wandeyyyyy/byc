@@ -1474,17 +1474,17 @@ fieldset .sold {
   display: none;
 }
 .section-cartItem .login input[type=checkbox] + label:before {
-  content: "✔";
+  content: "✓";
   display: inline-block;
   margin-right: 5px;
   width: 18px;
   height: 20px;
   border: 1px solid var(--brand-colour-1, #BD3A3A);
-  color: #fff;
+  color: #fff !important;
 }
 .section-cartItem .login input[type=checkbox]:checked + label:before {
   background-color: var(--brand-colour-1, #BD3A3A);
-  color: #fff;
+  color: #fff !important;
 }
 .section-cartItem .lOgin {
   width: 100%;
@@ -1894,6 +1894,9 @@ fieldset .sold {
   }
   .section-cartItem .accountSect {
     padding: 50px 20px;
+  }
+  .section-cartItem .create {
+    width: auto;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
