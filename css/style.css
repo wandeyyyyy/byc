@@ -1490,6 +1490,7 @@ fieldset .sold {
   width: 100%;
   font-weight: 700;
   font-size: 12px;
+  padding: 14px 0;
 }
 .section-cartItem .lOgin:hover {
   background: #D7000F;
@@ -1509,6 +1510,9 @@ fieldset .sold {
 }
 .section-cartItem .accountSect {
   padding: 100px 20px;
+}
+.section-cartItem .email, .section-cartItem .password {
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 768px) {

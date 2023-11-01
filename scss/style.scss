@@ -1696,6 +1696,7 @@ margin: 30px 0;
     width: 100%;
     font-weight: 700;
     font-size: 12px;
+    padding: 14px 0;
     &:hover{
       background: $buttonhover;
     }
@@ -1715,6 +1716,10 @@ width: 60%;
 }
 .accountSect{
   padding: 100px 20px;
+}
+.email, .password{
+  font-weight: 400;
+
 }
 }
 
