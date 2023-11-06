@@ -455,18 +455,28 @@ top:20%;
 cursor: pointer;
   }
   .arr2{
-right: 10px;
+right: 7%;
 border-radius: 100%;
 @include shadow;
-width: 40px;
+width: 30px;
 padding: 0;
+&:hover{
+  background: #000000;
+  color:#ffffff;
+  font-weight: 900;
+}
   }
   .arr1{
-    left: 10px;
+    left: 7%;
     border-radius: 100%;
     @include shadow;
-    width: 40px;
+    width: 30px;
     padding: 0;
+    &:hover{
+      background: #000000;
+      color: #ffffff;
+      font-weight: 900;
+    }
   }
 }
 }
