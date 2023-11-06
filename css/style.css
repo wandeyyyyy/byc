@@ -348,10 +348,18 @@ body {
   cursor: pointer;
 }
 .section5 .sectionfive .arr2 {
-  right: 0;
+  right: 10px;
+  border-radius: 100%;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.35);
+  width: 40px;
+  padding: 0;
 }
 .section5 .sectionfive .arr1 {
-  left: 0;
+  left: 10px;
+  border-radius: 100%;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.35);
+  width: 40px;
+  padding: 0;
 }
 
 .section6 {
@@ -1516,6 +1524,9 @@ fieldset .sold {
 }
 
 @media only screen and (max-width: 768px) {
+  .section-byc button {
+    width: 80% !important;
+  }
   .about-lastsection .product1, .about-lastsection .product2, .about-lastsection .product3 {
     display: none;
   }
