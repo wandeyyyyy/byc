@@ -354,22 +354,12 @@ body {
   width: 30px;
   padding: 0;
 }
-.section5 .sectionfive .arr2:hover {
-  background: #000000;
-  color: #ffffff;
-  font-weight: 900;
-}
 .section5 .sectionfive .arr1 {
   left: 7%;
   border-radius: 100%;
   box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.35);
   width: 30px;
   padding: 0;
-}
-.section5 .sectionfive .arr1:hover {
-  background: #000000;
-  color: #ffffff;
-  font-weight: 900;
 }
 
 .section6 {

@@ -460,11 +460,7 @@ border-radius: 100%;
 @include shadow;
 width: 30px;
 padding: 0;
-&:hover{
-  background: #000000;
-  color:#ffffff;
-  font-weight: 900;
-}
+
   }
   .arr1{
     left: 7%;
@@ -472,11 +468,7 @@ padding: 0;
     @include shadow;
     width: 30px;
     padding: 0;
-    &:hover{
-      background: #000000;
-      color: #ffffff;
-      font-weight: 900;
-    }
+    
   }
 }
 }
