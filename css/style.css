@@ -15,6 +15,20 @@ body {
   padding-bottom: 10px;
 }
 
+.linkPage {
+  margin-top: 10%;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+.linkPage .links {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 50%;
+}
+.linkPage .links:hover {
+  text-decoration: none;
+}
+
 .wishlist-navbar {
   background: #2F2F2F !important;
 }

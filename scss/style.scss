@@ -80,6 +80,21 @@ body{
   background: white;
   padding-bottom: 10px;
 }
+.linkPage{
+  margin-top: 10%;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+.links{
+  text-decoration:none;
+  color: rgba(0, 0, 0, 0.5);
+
+  margin-top: 50%;
+  &:hover{
+    text-decoration:none;
+
+  }
+  }
+}
 
 // nav starts
 
