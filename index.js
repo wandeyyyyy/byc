@@ -12,28 +12,33 @@ rotateWord() ;
 setInterval(rotateWord, 2000);
 
 
-// carousel
-$('.owl-carousel').owlCarousel({
-   loop:true,
-   margin:10,
-   dots: false,
-   autoplay:true,
-   autoplayTimeout: 3000,
-   autoplayHoverPause: true,
-   responsiveClass:true,
-   responsive:{
-       0:{
-           items:1,
-           nav:true
-       },
-       600:{
-           items:1,
-           nav:true
-       },
-       1000:{
-        items:3,
-        nav:true
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    //  direction: 'vertical',
+    loop: true,
+  spaceBetween:32,
+  grabCursor: true,
+    // If we need pagination
+      pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+     },
+   
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+breakpoints: {
+    600:{
+        slidesPerView: 2,
+    },
+    1200:{
+        slidesPerView: 3,
     }
-   }
-})
-
+}
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  });
