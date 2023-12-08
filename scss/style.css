@@ -333,47 +333,9 @@ body {
   justify-content: center;
   margin-bottom: 5%;
 }
-.section5 .sect5-img {
-  margin: 0 auto;
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.section5 .sect5-img .img5 {
-  background: #f1f1f1;
-}
-.section5 .sect5-img .img5 img {
+.section5 .imgslide {
   width: 100%;
-}
-.section5 .sect5-img p {
-  font-size: 16px;
-  font-weight: 800;
-}
-.section5 .sect5-img p span {
-  font-weight: 400;
-}
-.section5 .sect5-img .price {
-  font-weight: 500;
-}
-.section5 .sectionfive .arr1, .section5 .sectionfive .arr2 {
-  position: absolute;
-  top: 20%;
-  cursor: pointer;
-}
-.section5 .sectionfive .arr2 {
-  right: 7%;
-  border-radius: 100%;
-  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.35);
-  width: 30px;
-  padding: 0;
-}
-.section5 .sectionfive .arr1 {
-  left: 7%;
-  border-radius: 100%;
-  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.35);
-  width: 30px;
-  padding: 0;
+  height: 400px;
 }
 
 .section6 {
@@ -1699,7 +1661,7 @@ fieldset .sold {
     width: 80%;
   }
   .section5 .img5-1, .section5 .img5-2 {
-    display: none;
+    display: block;
   }
   .section5 .viewBtn2 {
     margin-top: 8%;
@@ -1957,53 +1919,4 @@ fieldset .sold {
   .section1-blog .blog-sect .textnread {
     top: 30%;
   }
-}
-
-/* index page pagination */
-.swiper{
-  height: 500px;
-  }
-  .swiper-slide{
-    
-      display: flex !important;
-      justify-content: center;
-    align-items: center;
-    
-  }
-  
-  .swiper-button-next::after, .swiper-button-prev::after {
-  
-      font-size: 18px !important;
-  color: white;
-  box-shadow: 2px 2px 2px black, 2px 2px 8px grey;
-  padding: 10px;
-  border-radius: 100%;
-  background-color: black;
-      font-weight: 900;
-  }
-  
-
-  
-  .swiper-pagination{
-  position: static !important;
-  margin-top: 15px;
-  }
-  
-  .swiper-pagination-bullet{
-      background-color: grey !important;
-      opacity: 1;
-  }
-  
-  .swiper-pagination{
-      display: none;
-  }
-  
-  @media screen and (max-width: 768px) {
-      .swiper-button-next:after, .swiper-button-prev:after{
-          display: none;
-      } 
-      .swiper-pagination{
-          display: block;
-      }
-  }
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,5 @@
+
+
 const words = ["Men","Women","Kids","Yourself"];
 
 let currentWordIndex = 0;
@@ -16,14 +18,17 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     //  direction: 'vertical',
     loop: true,
-  spaceBetween:32,
+    spaceBetween:20,
   grabCursor: true,
     // If we need pagination
       pagination: {
       el: '.swiper-pagination',
       clickable: true,
      },
-   
+     autoplay: {
+     delay: 3000,
+     pauseOnMouseEnter: true,
+    },
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
