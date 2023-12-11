@@ -368,6 +368,9 @@ body {
 .section5 .swiper-pagination {
   display: none !important;
 }
+.section5 .swiper-pagination-bullet-active {
+  background: #2f2f2f !important;
+}
 
 .section6 {
   width: 100%;
@@ -1618,6 +1621,10 @@ fieldset .sold {
   }
   .mobileNav {
     display: block;
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+    background: #fff;
   }
   .section1 .btns {
     flex-direction: column;

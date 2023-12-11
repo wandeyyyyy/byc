@@ -480,6 +480,9 @@ font-size:28px !important;
 .swiper-pagination{
   display: none !important;
 }
+.swiper-pagination-bullet-active{
+  background: #2f2f2f !important;
+ }
 }
 // section6
 .section6{
@@ -1829,7 +1832,11 @@ color: #ffffff !important;
     display: none;
   }
   .mobileNav{
-    display: block;
+display: block;
+position: sticky;
+top:10px;
+z-index: 10;
+background: #fff;
   }
 
   // section1
@@ -1928,6 +1935,7 @@ color: #ffffff !important;
  .swiper-button-prev, .swiper-button-next{
   display: none !important;
  }
+
 }
 
 
