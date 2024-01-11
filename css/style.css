@@ -76,6 +76,40 @@ body {
   cursor: pointer;
 }
 
+.collapseProduct {
+  width: 100%;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+.collapseProduct .productss {
+  width: 100%;
+  background-color: var(--brand-colour-1, #BD3A3A);
+  color: #Ffffff;
+  font-weight: 800;
+  padding: 8px 14px;
+}
+.collapseProduct .prochild {
+  padding: 0 !important;
+}
+.collapseProduct .pro-child {
+  margin: 0 !important;
+}
+.collapseProduct .d-flex {
+  display: flex;
+  align-items: end;
+}
+.collapseProduct .d-flex img {
+  margin-left: 4px;
+}
+.collapseProduct .shoplist {
+  width: 100%;
+}
+.collapseProduct .shoplist .shop {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  padding: 0 14px;
+}
+
 .section1 {
   width: 100%;
   margin-top: 12%;

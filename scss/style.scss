@@ -149,10 +149,48 @@ font-weight: 500;
 .smallIcon{
   cursor: pointer;
 }
+
 }
 // nav ends
 
+// shopproducts
 
+.collapseProduct{
+  width: 100%;
+  padding: 20px;
+  background-color: $bg-color;
+  .productss{
+    width: 100%;
+    background-color: $redcolor;
+    color: #Ffffff;
+    font-weight: 800;
+    padding: 8px 14px;
+  }
+  .prochild{
+    padding: 0 !important;
+   
+  }
+
+  .pro-child{
+    margin: 0 !important;
+  }
+  .d-flex{
+    display: flex;
+    align-items: end;
+img{
+  margin-left: 4px;
+}
+  }
+  .shoplist{
+width:100%;
+    .shop{
+      font-size: 18px !important;
+      font-weight: 700 !important;
+      padding: 0 14px;
+     }
+  
+  }
+}
 // landing page
 // section1 starts 
 .section1{
