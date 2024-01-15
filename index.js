@@ -47,3 +47,25 @@ breakpoints: {
     //   el: '.swiper-scrollbar',
     // },
   });
+
+  // mother element dropdown
+const dropdownBtn = document.getElementById('imgbtn');
+const dropdownContent = document.getElementById('dropdown');
+
+// children element dropdown
+const productDropdown = document.querySelectorAll('.flexArr');
+const productDrop = document.querySelector('.product-dropdown');
+
+
+
+dropdownBtn.addEventListener('click', function(){
+  dropdownContent.classList.toggle('show')
+  productDrop.classList.remove('show');
+})
+productDropdown.forEach(function(element) {
+  // Add a click event listener to each element
+  element.addEventListener('click', function() {
+    // Toggle the class 'show' on productDrop
+    productDrop.classList.toggle('show');
+  });
+});

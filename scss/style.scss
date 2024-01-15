@@ -156,6 +156,7 @@ font-weight: 500;
 // shopproducts
 
 .collapseProduct{
+
   width: 100%;
   padding: 20px;
   background-color: $bg-color;
@@ -170,7 +171,12 @@ font-weight: 500;
     padding: 0 !important;
    
   }
-
+#imgbtn{
+  cursor: pointer;
+  border: none;
+  background-color: $redcolor;
+  padding: 0 !important;
+}
   .pro-child{
     margin: 0 !important;
   }
@@ -190,7 +196,90 @@ width:100%;
      }
   
   }
+
+#dropdown{
+  list-style: none;
+  margin: 0 !important;
+  padding:0;
+color: #f1f1f1;
+display: none;
+position: relative;
+top:5px;
+width: 150px;
+height: 100px;
+
+ }
+ #dropdown li{
+  background-color: white;
+  box-shadow: 0 0 2px lightgray;
+  color: #000000;
+position: relative;
+top:10px;
+margin: 10px 5px 0 5px;
+padding: 3px 10px;
+font-weight: 700;
+font-size: 18px;
+
+  z-index: 10;
+ }
+#dropdown.show{
+  display: block;
+  transition: 2s ease;
 }
+#dropdown.dontShow{
+  display: none;
+}
+.flex-arrow{
+
+  margin-top: 6px;
+  cursor: pointer;
+}
+.flexArr{
+  background-color: #ffffff;
+  float: right;
+  border: none;
+}
+
+// .d-flex-child{
+//   cursor: pointer;
+
+//   &:hover{
+//     ~ .dropdown{
+//       display: block;
+//     }
+//   }
+// }
+.product-dropdown{
+  list-style: none;
+background-color: #ffffff;
+margin: 0 !important;
+padding: 0 !important;
+width: 200px;
+position:absolute;
+top:180px;
+left: 200px;
+box-shadow: 0 0 2px lightgray;
+border-radius: 5px;
+display: none;
+li{
+  padding:  8px 15px;
+}
+  a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+
+  
+  }
+}
+.product-dropdown.show{
+  display: block;
+}
+}
+
+
+
 // landing page
 // section1 starts 
 .section1{
