@@ -171,7 +171,7 @@ font-weight: 500;
     padding: 0 !important;
    
   }
-#imgbtn{
+#imgbtn, #imgbtn1, #imgbtn2{
   cursor: pointer;
   border: none;
   background-color: $redcolor;
@@ -231,7 +231,7 @@ font-size: 18px;
 }
 .flex-arrow{
 
-  margin-top: 6px;
+
   cursor: pointer;
 }
 .flexArr{
@@ -258,26 +258,52 @@ width: 200px;
 position:absolute;
 top:180px;
 left: 200px;
-box-shadow: 0 0 2px lightgray;
+box-shadow: 0 2px 10px gray;
 border-radius: 5px;
 display: none;
 li{
   padding:  8px 15px;
-}
+width: 100%;
+  cursor: pointer;
+  &:hover{
+    background-color: $redcolor;
+   
+  }
+  &:hover{
+    a{
+      color: #ffffff;
+    }
+  }
   a{
     text-decoration: none;
     color: black;
     font-size: 18px;
     font-weight: 500;
+    width: 100%;
 
   
   }
 }
+}
+
 .product-dropdown.show{
   display: block;
 }
 }
-
+.product-dropdown1{
+  top:180px !important;
+left: 42% !important;
+display:none
+}
+.product-dropdown1.show, .product-dropdown2.show{
+  display: block;
+  transition: 2s ease;
+}
+.product-dropdown2{
+  top:180px !important;
+left: 64% !important;
+display: none;
+}
 
 
 // landing page
