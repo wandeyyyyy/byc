@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "config": "^3.3.11",
+    "joi": "^13.1.0",
+    "joi-objectid": "^4.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21"
+  }
+}
