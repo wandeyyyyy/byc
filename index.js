@@ -10,8 +10,8 @@ function rotateWord(){
    currentWordIndex = (currentWordIndex + 1) % words.length;
 }
 
-rotateWord() ;
-setInterval(rotateWord, 2000);
+rotateWord();
+ setInterval(rotateWord, 2000);
 
 
 const swiper = new Swiper('.swiper', {
