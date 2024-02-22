@@ -48,68 +48,50 @@ breakpoints: {
     // },
   });
 
+// product dropdown
+  document.addEventListener("DOMContentLoaded", function() {
+    let dropdownMenu = document.querySelector('.dropdown-mainmenu');
 
-// // to pick a mother dropdown
-// function motherDrop(dropNum){
-//   let dropdowns = document.getElementsByClassName("product-dropdown")
-//   for (let i = 0; i < dropdowns.length; i++) {
-//     if (i + 1 !== dropNum) {
-//       dropdowns[i].style.display = "none";
-//     }
-//   }
-//   let currentDropdown = document.getElementsByClassName("product-dropdown" + dropNum);
-//   if (currentDropdown) {
-//     for (let i = 0; i < dropdowns.length; i++) {
-//       let currentDropdown = dropdowns[i];
-//       // Toggle the display property
-//       if (currentDropdown.style.display === "none" || currentDropdown.style.display === "") {
-//         currentDropdown.style.display = "block";
-//       } else {
-//         currentDropdown.style.display = "none";
-//       }
-//     }
- 
-//   }
-// }
-
-
-
-
-  // mother element dropdown
-const dropdownBtn = document.getElementById('imgbtn');
-const dropdownContent = document.getElementById("dropdown");
-
-// children element dropdown
-const productDropdown = document.querySelectorAll('.flexArr');
-const productDrop = document.querySelector('.product-dropdown');
-// men product dropdown
-const menUndies = document.getElementById('imgbtn1');
-const menUndiesDropdown = document.querySelector('.product-dropdown1');
-// women product dropdown
-const womenUndies = document.getElementById('imgbtn2');
-const womenUndiesDropdown = document.querySelector('.product-dropdown2');
-
-
-
-
-dropdownBtn.addEventListener('click', function(){
-  dropdownContent.classList.toggle('show')
-  productDrop.classList.remove('show');
-
-})
-
-productDropdown.forEach(function(element) {
-  // Add a click event listener to each element
-  element.addEventListener('click', function() {
-    // Toggle the class 'show' on productDrop
-    productDrop.classList.toggle('show');
-  });
+    // Prevent the dropdown from closing when clicking inside it
+    dropdownMenu.addEventListener('click', function(event) {
+        event.stopPropagation();
+    });
 });
 
-menUndies.addEventListener('click', function(){
-menUndiesDropdown.classList.toggle('show')
-});
-womenUndies.addEventListener('click', function(){
-womenUndiesDropdown.classList.toggle('show')
-});
 
+// search button
+function showSearch(event) {
+  event.preventDefault();
+  const getSearch = document.querySelector(".has-search");
+  const getLogo = document.querySelector(".byclogo");
+  const searchIcon = document.querySelector(".si");
+  getSearch.style.display = "block";
+  searchIcon.style.display = "none";
+  getLogo.style.display = "none"
+}
+function hideSearch(event) {
+  event.preventDefault();
+  const getSearch = document.querySelector(".has-search");
+  const getLogo = document.querySelector(".byclogo");
+  const searchIcon = document.querySelector(".sii");
+  getSearch.style.display = "none";
+  searchIcon.style.display = "block";
+  getLogo.style.display = "block"
+}
+function showSmallSearch(event) {
+  event.preventDefault();
+  const search = document.querySelector(".form-groupsmall");
+  const mobilenav = document.querySelector(".smallnav");
+
+  search.style.display = "block";
+  mobilenav.style.display = "none"
+}
+
+function closeSearch(event){
+  event.preventDefault();
+  const search = document.querySelector(".form-groupsmall");
+  const mobilenav = document.querySelector(".smallnav");
+
+  search.style.display = "none";
+  mobilenav.style.display = "flex"
+}
