@@ -20,10 +20,10 @@
         <div class="d-flex align-items-center form2">
           <input type="text" class="formInput2" placeholder="Search Product">
           <span class="fa fa-search form-control-feedback"></span>
-          <span class="fa fa-times form-control-feedback times ml-3" style="font-size: 24px; color: #D7000F;" onclick="closeSearch(event)" ></span>
+          <span class="fa fa-times form-control-feedback times ms-3" style="font-size: 24px; color: #D7000F;" onclick="closeSearch(event)" ></span>
         </div>
       </div> 
-  <nav class="navbar navbar-expand-lg navbar-light smallnav">
+  <nav class="navbar navbar-expand-lg bg-white smallnav">
     <a class="navbar-brand d-lg-none" href="index.html"> <img src="/assets/byclogo.png" alt=""> </a>
     <button class=" navBtn"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
@@ -33,70 +33,65 @@
 
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active dropdown">
-          <a class="nav-link " href="#"  data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link" href="#"  
+          role="button" 
+          data-bs-toggle="dropdown" 
+          data-bs-auto-close="outside"
+          aria-expanded="false">
           Shop Products
           </a>
           <ul class="dropdown-menu  dropdown-mainmenu shoplist">
-              <h3 class="ms-4 mt-5 mb-3 shop"> <a href="products.html">All products</a></h3>
-              <div class=" drop-header py-1 d-flex">
-                <div class="col-4">
+              <h3 class="ms-4 mt-5 mb-3 shop"> <a href="allproducts.html">All products</a></h3>
+              <div class=" drop-header py-1 ">
+          
 
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle ms-3" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                  <li class="nav-item dropdown main-link">
+                      <a class="nav-link px-2 dropdown-toggle small-link"
+                       href="#" 
+                    
+                      role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                       Children
                       </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownSubmenu">
-                          <li class="nav-item dropright dropdown-submenu">
-                              <a class="nav-link dropdown-item dropdown-toggle gender" href="#" data-toggle="dropdown" aria-expanded="false">
+                      <ul class="dropdown-menu">
+                          <li class="nav-item dropend dropdown submenu-li  gendermenu">
+                              <a class="nav-link dropdown-toggle mov ps-4 gender" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                                   male
                               </a>
-                              <ul class="dropdown-menu sub-submenu sub">
+                              <ul class="dropdown-menu sub-submenu">
                                   <li>
-                                      <a class="dropdown-item" href="#">Boxers</a>
+                                      <a class="dropdown-item items" href="#">Boxers</a>
                                   </li>
+                                 
+                              
                                   <li>
-                                      <a class="dropdown-item" href="#">pants</a>
+                                      <a class="dropdown-item items" href="#">singlet</a>
                                   </li>
-                                  <li>
-                                      <a class="dropdown-item" href="#">t-shirts</a>
-                                  </li>
-                                  <li>
-                                      <a class="dropdown-item" href="#">singlet</a>
-                                  </li>
-                                  <li>
-                                      <a class="dropdown-item" href="#">towels</a>
-                                  </li>
+                                 
                               </ul>
                           </li>
-                          <li class="nav-item dropdown  dropright  submenu-li">
-                              <a class="nav-link dropdown-toggle ps-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <li class="nav-item dropend gendermenu submenu-li">
+                              <a class="nav-link dropdown-toggle mov ps-4 gender" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                   female
                               </a>
                               <ul class="dropdown-menu sub-submenu sub2">
+                                 
                                   <li>
-                                      <a class="dropdown-item" href="#">Boxers</a>
+                                      <a class="dropdown-item items" href="#">pants</a>
                                   </li>
+                               
                                   <li>
-                                      <a class="dropdown-item" href="#">pants</a>
+                                      <a class="dropdown-item items" href="#">singlet</a>
                                   </li>
-                                  <li>
-                                      <a class="dropdown-item" href="#">t-shirts</a>
-                                  </li>
-                                  <li>
-                                      <a class="dropdown-item" href="#">singlet</a>
-                                  </li>
-                                  <li>
-                                      <a class="dropdown-item" href="#">towels</a>
-                                  </li>
+                                 
                               </ul>
                           </li>
                       </ul>
                   </li>
-                </div>
-                <div class="col-4">
+               
+          
                   
                   <li class="nav-item dropdown main-link">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link px-2 dropdown-toggle small-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Men
                       </a>
                       <ul class="dropdown-menu sub-submenu mt-1">
@@ -117,11 +112,11 @@
                           </li>
                       </ul>
                   </li>
-                </div>
-                <div class="col-4">
+               
+          
 
-                  <li class="nav-item dropdown main-link">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle small-link px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                       women
                       </a>
                       <ul class="dropdown-menu sub-submenu mt-1">
@@ -142,7 +137,7 @@
                           </li>
                       </ul>
                   </li>
-                </div>
+               
               </div>
           </ul>
       </li>
@@ -160,9 +155,9 @@
         </li>
 
  <div class="d-flex mt-2">
-      <li class="mr-4 smallmag" onclick="showSmallSearch(event)"><a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000714;"></i></a></li>
-      <li class="mr-4"><a href="account.html"><i class="fa-regular fa-user" style="color: #000714;"></i></a></li>
-      <li class="mr-4"><a href="wishlist.html"><i class="fa-regular fa-heart" style="color: #000714;"></i></a></li>
+      <li class="me-4 smallmag" onclick="showSmallSearch(event)"><a href=""><i class="fa-solid fa-magnifying-glass" style="color: #000714;"></i></a></li>
+      <li class="me-4"><a href="account.html"><i class="fa-regular fa-user" style="color: #000714;"></i></a></li>
+      <li class="me-4"><a href="wishlist.html"><i class="fa-regular fa-heart" style="color: #000714;"></i></a></li>
       <li><a href="cartItems.html"><i class="fa-solid fa-cart-shopping" style="color: #000714;"></i></a></li>
 
     </div>
@@ -181,9 +176,114 @@
     <div class="largeScreenNav">
        <div>
         <ul class="nav">
-        <li class="nav-item active">
-          <a class="nav-link"  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-toggle="dropdown" data-bs-auto-close="outside">Shop Products</a>
-          
+          <li class="nav-item active dropdown">
+            <a class="nav-link" href="#"  
+            role="button" 
+            data-bs-toggle="dropdown" 
+            data-bs-auto-close="outside"
+            aria-expanded="false">
+            Shop Products
+            </a>
+            <ul class="dropdown-menu mt-2  drop-header-lg dropdown-mainmenu shoplist">
+                <h3 class="ms-4 mt-5 mb-3 shop"> <a href="allproducts.html">All products</a></h3>
+                <div class=" drop-header py-1 d-flex ">
+            
+  
+                    <li class="nav-item dropdown main-link">
+                        <a class="nav-link dropdown-toggle gends px-2"
+                         href="#" 
+                      
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        Children
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item dropend dropdown submenu-li  gendermenu">
+                                <a class="nav-link dropdown-toggle mov ps-4 gender" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                                    male
+                                </a>
+                                <ul class="dropdown-menu sub-submenu">
+                                    <li>
+                                        <a class="dropdown-item items" href="#">Boxers</a>
+                                    </li>
+                                   
+                                
+                                    <li>
+                                        <a class="dropdown-item items" href="#">singlet</a>
+                                    </li>
+                                   
+                                </ul>
+                            </li>
+                            <li class="nav-item dropend gendermenu submenu-li">
+                                <a class="nav-link dropdown-toggle mov ps-4 gender" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    female
+                                </a>
+                                <ul class="dropdown-menu sub-submenu sub2">
+                                   
+                                    <li>
+                                        <a class="dropdown-item items" href="#">pants</a>
+                                    </li>
+                                 
+                                    <li>
+                                        <a class="dropdown-item items" href="#">singlet</a>
+                                    </li>
+                                   
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                 
+            
+                    
+                    <li class="nav-item dropdown main-link">
+                        <a class="nav-link gends dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Men
+                        </a>
+                        <ul class="dropdown-menu sub-submenu mt-1">
+                            <li>
+                                <a class="dropdown-item" href="#">Boxers</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">pants</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">t-shirts</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">singlet</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">towels</a>
+                            </li>
+                        </ul>
+                    </li>
+                 
+            
+  
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle gends" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                        women
+                        </a>
+                        <ul class="dropdown-menu sub-submenu mt-1">
+                            <li>
+                                <a class="dropdown-item" href="category.html">camisole</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">pants</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">t-shirts</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">singlet</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">towels</a>
+                            </li>
+                        </ul>
+                    </li>
+                 
+                </div>
+            </ul>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="blog.html">Blog</a>
@@ -200,7 +300,7 @@
     <div class="d-flex align-items-center">
       <input type="text" class=" formInput" placeholder="Search Product">
       <span class="fa fa-search form-control-feedback"></span>
-      <span class="fa fa-times form-control-feedback times ml-3" style="font-size: 24px; color: #D7000F;" onclick="hideSearch(event) " ></span>
+      <span class="fa fa-times form-control-feedback times ms-3" style="font-size: 24px; color: #D7000F;" onclick="hideSearch(event)" ></span>
     </div>
   </div>
   <div class="aboutNdCart d-flex">
@@ -214,71 +314,15 @@
       
     </div>
     <div class="d-flex nav largeIcon">
-      <li class="mr-4 si sii" onclick="showSearch(event)"><i class="fa-solid fa-magnifying-glass" style="color: #000714;"></i></li>
-      <li class="mr-4"><a href="account.html"><i class="fa-regular fa-user" style="color: #000714;"></i></a></li>
-      <li class="mr-4"><a href="wishlist.html"><i class="fa-regular fa-heart" style="color: #000714;"></i></a></li>
+      <li class="me-4 si sii" onclick="showSearch(event)"><i class="fa-solid fa-magnifying-glass" style="color: #000714;"></i></li>
+      <li class="me-4"><a href="account.html"><i class="fa-regular fa-user" style="color: #000714;"></i></a></li>
+      <li class="me-4"><a href="wishlist.html"><i class="fa-regular fa-heart" style="color: #000714;"></i></a></li>
       <li><a href="cartItems.html"><i class="fa-solid fa-cart-shopping" style="color: #000714;"></i></a></li>
 
     </div>
   </div>
   </div>
-  <!-- <div class="collapse collapseProduct" id="collapseExample">
-    <div class="shoplist">
-      <p class="shop">ALL PRODUCTS</p>
-  <div class="row productss">
-  <div class="col-lg-5 col-xl-5 prochild">
-  <div class="d-flex d-flex-child"> 
-    <p class="pro-child" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">CHILDREN</p>
-  <button id="imgbtn" class="motherbtn" ><img src="assets/clarity_angle-line.png" class="img-arrow" name="cars" id="cars" alt=""></button>
-
-  </div>
-</div>
-  <div class="col-lg-7 col-xl-7">
-    <div class="row">
-      <div class="col-lg-5 col-xl-5 prochild">
-        <div class="d-flex"> <p class="pro-child">MEN</p>
-          <button id="imgbtn1" class="motherbtn" > <img src="assets/clarity_angle-line.png" class="img-arrow" alt=""></button>
-          </div>
-       
-      </div>
-      <div class="col-lg-5 col-xl-5 prochild"><div class="d-flex"> <p class="pro-child">WOWEN</p>
-        <button id="imgbtn2" class="motherbtn" >  <img src="assets/clarity_angle-line.png" class="img-arrow" alt=""></button>
-        </div></div>
-      <div class="col-lg-2 col-xl-2 prochild"></div>
-    </div>
-  </div> 
-
-  </div>
-  <ul class="dropdown product-dropdown3" id="dropdown" >
-  <li>MALE <button type="button" class="flexArr"><img src="assets/openarrow.png" alt="" class="flex-arrow"></button> </li>
-  <li>FEMALE  <button type="button" class="flexArr"><img src="assets/openarrow.png" alt="" class="flex-arrow"></button></li>
-  </ul>
-  <ul class="product-dropdown">
-    <li><a href="#">Boxer</a></li>
-    <li><a href="#">Pants</a></li>
-    <li><a href="#">T-shirts</a></li>
-    <li><a href="#">Singlet</a></li>
-    <li><a href="#">Towels</a></li>
-
-  </ul>
-  <ul class="product-dropdown product-dropdown1">
-    <li><a href="#">Boxer</a></li>
-    <li><a href="#">Pants</a></li>
-    <li><a href="#">T-shirts</a></li>
-    <li><a href="#">Singlet</a></li>
-    <li><a href="#">Towels</a></li>
-
-  </ul>
-  <ul class="product-dropdown product-dropdown2">
-    <li><a href="#">Boxer</a></li>
-    <li><a href="#">Pants</a></li>
-    <li><a href="#">T-shirts</a></li>
-    <li><a href="#">Singlet</a></li>
-    <li><a href="#">Towels</a></li>
-
-  </ul>
-    </div>
-  </div> -->
+ 
   </div>
   </div>
   <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
@@ -302,7 +346,7 @@
       <p class="p2" >Get the best for <span id="rotatingHeading">yourself</span></p>
     <div class="btns">
         <div class="shopbtn">
-          <button class="button button1 mr-4">Shop Now</button>
+          <button class="button button1 me-4">Shop Now</button>
         </div>
         <div class="learnbtn">
           <button class="button button2">Learn More</button>
@@ -440,14 +484,14 @@
   <div class="shopCategory">
     <h3 class="text-center">Shop By Category</h3>
     <div class="peopleundies mt-5">
-      <div class="mr-3 pple"><p>For Women</p></div>
-      <div class="mr-3 pple"><p>For Men</p></div>
+      <div class="me-3 pple"><p>For Women</p></div>
+      <div class="me-3 pple"><p>For Men</p></div>
       <div class="pple"><p>For Kids</p></div>
     </div>
     <div class="undies mt-4">
-      <div class="mr-2"><p>T-shirt</p></div>
-      <div class="mr-2"><p>Singlet</p></div>
-      <div class="mr-2"><p>Pants</p></div>
+      <div class="me-2"><p>T-shirt</p></div>
+      <div class="me-2"><p>Singlet</p></div>
+      <div class="me-2"><p>Pants</p></div>
       <div><p>Boxers</p></div>
     </div>
   </div>
@@ -748,7 +792,7 @@
 </div>
   </div> 
 
-  <hr>
+  <hr class="mx-auto">
   <p class="text-center text-white copy">All rights Reserved  copyright bycafrica 2021.</p>
   <!-- Copyright -->
 </footer>

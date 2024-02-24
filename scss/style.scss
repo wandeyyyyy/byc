@@ -87,7 +87,7 @@ body{
   padding-bottom: 10px;
 }
 .linkPage{
-  margin-top: 10%;
+  margin-top: 80px;
   color: rgba(0, 0, 0, 0.5);
   font-weight: 600;
 .links{
@@ -161,9 +161,16 @@ color: black;
   display: none;
 font-size: 16px;
 font-weight: 500;
-
+background-color: #ffffff;
+z-index: 100;
 .smallIcon{
   cursor: pointer;
+}
+.nav-link{
+  color: #000 !important;
+}
+.small-link{
+  color: #fff !important;
 }
 .form-groupsmall{
   width: 100% !important;
@@ -173,6 +180,7 @@ font-weight: 500;
   
   .formInput2{
     width: 100% !important;
+    padding: 8px 0;
     border: none;
     border-bottom: 1px solid black;
     &:focus{
@@ -201,15 +209,45 @@ font-weight: 500;
   .drop-header{
     background-color: $redcolor;
     a{
-    color: #fff !important;
-    font-weight: 400;
+    color: #fff;
+    font-weight: 600;
     }
   }
   a{
     list-style-type: none;
   }
-}
+  .gender{
+    color: #000 !important;
 
+  }
+  .items{
+    color: #000 !important;
+  }
+  .gendermenu{
+    width: 30%;
+  }
+
+}
+.dropdown-item{
+  color: #000 !important;
+ &:hover{
+  color: #ffffff !important;
+  background-color: #BD3A3A;
+  transition: .3s ease;
+ } 
+ }
+ .drop-header-lg{
+  width: 80vw;
+  .drop-header{
+width: 100%;
+.dropdown{
+  width: 100%;
+}
+.gends{
+  width: 33.3%;
+}
+  }
+ }
 
 
 // landing page
@@ -363,7 +401,7 @@ font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+   
   
   }
   .sectionthree1{
@@ -1213,13 +1251,13 @@ padding: 0;
     border-bottom: 3px solid #f1eeee;
     .list, .grid{
 padding: 10px 30px;
-    }
-    .list{
+cursor: pointer;
 @include list;
+&:hover{
+  @include grid;
+}
     }
-    .grid{
-      @include grid;
-    }
+
   }
   .product1,.product2,.product3,.product4,.product5{
   .wishlist{
@@ -1849,6 +1887,7 @@ font-weight: 400;
     border-bottom: 3px solid #f1eeee;
     .list, .grid{
 padding: 10px 30px;
+cursor: pointer;
     }
     .list{
 @include list;
@@ -1897,7 +1936,9 @@ top:10px;
 z-index: 10;
 background: #fff;
   }
-
+  .linkPage{
+    margin-top: 20px;
+  }
   // section1
   .section1{
    .btns{

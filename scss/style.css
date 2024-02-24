@@ -16,7 +16,7 @@ body {
 }
 
 .linkPage {
-  margin-top: 10%;
+  margin-top: 80px;
   color: rgba(0, 0, 0, 0.5);
   font-weight: 600;
 }
@@ -87,9 +87,17 @@ body {
   display: none;
   font-size: 16px;
   font-weight: 500;
+  background-color: #ffffff;
+  z-index: 100;
 }
 .mobileNav .smallIcon {
   cursor: pointer;
+}
+.mobileNav .nav-link {
+  color: #000 !important;
+}
+.mobileNav .small-link {
+  color: #fff !important;
 }
 .mobileNav .form-groupsmall {
   width: 100% !important;
@@ -100,6 +108,7 @@ body {
 }
 .mobileNav .form-groupsmall .form2 .formInput2 {
   width: 100% !important;
+  padding: 8px 0;
   border: none;
   border-bottom: 1px solid black;
 }
@@ -119,13 +128,48 @@ body {
 .shoplist .shop a {
   color: #000;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .shoplist .drop-header {
   background-color: var(--brand-colour-1, #BD3A3A);
 }
 .shoplist .drop-header a {
-  color: #fff !important;
-  font-weight: 400;
+  color: #fff;
+  font-weight: 600;
+}
+.shoplist a {
+  list-style-type: none;
+}
+.shoplist .gender {
+  color: #000 !important;
+}
+.shoplist .items {
+  color: #000 !important;
+}
+.shoplist .gendermenu {
+  width: 30%;
+}
+
+.dropdown-item {
+  color: #000 !important;
+}
+.dropdown-item:hover {
+  color: #ffffff !important;
+  background-color: #BD3A3A;
+  transition: 0.3s ease;
+}
+
+.drop-header-lg {
+  width: 80vw;
+}
+.drop-header-lg .drop-header {
+  width: 100%;
+}
+.drop-header-lg .drop-header .dropdown {
+  width: 100%;
+}
+.drop-header-lg .drop-header .gends {
+  width: 33.3%;
 }
 
 .section1 {
@@ -263,7 +307,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 .section3 .sectionthree1 {
   height: 100%;
@@ -1014,12 +1057,11 @@ fieldset .sold {
 }
 .main-allproducts .gridAndList .list, .main-allproducts .gridAndList .grid {
   padding: 10px 30px;
-}
-.main-allproducts .gridAndList .list {
+  cursor: pointer;
   border-radius: 2px;
   background: rgba(189, 58, 58, 0.06);
 }
-.main-allproducts .gridAndList .grid {
+.main-allproducts .gridAndList .list:hover, .main-allproducts .gridAndList .grid:hover {
   border-radius: 4px;
   background: #ffffff;
   box-shadow: 0px 2px 4px 0px rgba(41, 121, 255, 0.24), 0px 1px 2px 0px rgba(27, 78, 163, 0.24);
@@ -1629,6 +1671,7 @@ fieldset .sold {
   }
   .mobile-allproducts .gridAndList .list, .mobile-allproducts .gridAndList .grid {
     padding: 10px 30px;
+    cursor: pointer;
   }
   .mobile-allproducts .gridAndList .list {
     border-radius: 2px;
@@ -1683,6 +1726,9 @@ fieldset .sold {
     top: 10px;
     z-index: 10;
     background: #fff;
+  }
+  .linkPage {
+    margin-top: 20px;
   }
   .section1 .btns {
     flex-direction: column;

@@ -48,15 +48,7 @@ breakpoints: {
     // },
   });
 
-// product dropdown
-  document.addEventListener("DOMContentLoaded", function() {
-    let dropdownMenu = document.querySelector('.dropdown-mainmenu');
 
-    // Prevent the dropdown from closing when clicking inside it
-    dropdownMenu.addEventListener('click', function(event) {
-        event.stopPropagation();
-    });
-});
 
 
 // search button
@@ -95,3 +87,25 @@ function closeSearch(event){
   search.style.display = "none";
   mobilenav.style.display = "flex"
 }
+
+
+
+  // document.addEventListener("DOMContentLoaded", function() {
+  //   // Get all dropdown toggle buttons
+  //   let dropdownToggleButtons = document.querySelectorAll('.dropdown-toggle');
+
+  //   // Iterate over each dropdown toggle button
+  //   dropdownToggleButtons.forEach(function(button) {
+  //     // Add click event listener
+  //     button.addEventListener('click', function(event) {
+  //       // Close all dropdowns
+  //       let allDropdowns = document.querySelectorAll('.dropdown-menu.show');
+  //       allDropdowns.forEach(function(dropdown) {
+  //         if (dropdown !== button.nextElementSibling) {
+  //           dropdown.classList.remove('show');
+  //         }
+  //       });
+  //     });
+  //   });
+  // });
+
