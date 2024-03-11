@@ -90,22 +90,12 @@ function closeSearch(event){
 
 
 
-  // document.addEventListener("DOMContentLoaded", function() {
-  //   // Get all dropdown toggle buttons
-  //   let dropdownToggleButtons = document.querySelectorAll('.dropdown-toggle');
-
-  //   // Iterate over each dropdown toggle button
-  //   dropdownToggleButtons.forEach(function(button) {
-  //     // Add click event listener
-  //     button.addEventListener('click', function(event) {
-  //       // Close all dropdowns
-  //       let allDropdowns = document.querySelectorAll('.dropdown-menu.show');
-  //       allDropdowns.forEach(function(dropdown) {
-  //         if (dropdown !== button.nextElementSibling) {
-  //           dropdown.classList.remove('show');
-  //         }
-  //       });
-  //     });
-  //   });
-  // });
+  // gotologinpage
+  function gotoLoginPage(event) {
+    location.href = "account.html";
+  }
+  function logout() {
+    localStorage.clear();
+    location.href = "index.html";
+  }
 

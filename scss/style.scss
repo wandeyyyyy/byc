@@ -883,8 +883,17 @@ font-weight: 400;
 }
 
 
-
-
+.err-btn{
+  color: #ffffff;
+  background-color: $buttonhover;
+  border: none;
+  padding: 8px 20px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.helerror{
+  padding: 50px 0;
+}
 .slider-sec{
   .down-slider{
     display: flex;
@@ -1814,7 +1823,7 @@ width: 60%;
 }
 .buttonCreate{
   position: absolute;
-  top: 80%;
+  top: 73.2%;
 }
 .createAcct{
  position: relative;
