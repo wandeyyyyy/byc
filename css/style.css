@@ -37,6 +37,10 @@ body {
   background: none;
 }
 
+.navBtn-wishlist {
+  background-color: #2F2F2F !important;
+}
+
 .largeScreenNav {
   display: flex;
   justify-content: space-between;
@@ -79,10 +83,6 @@ body {
   background: white;
 }
 
-.btnnav {
-  background: #2f2f2f;
-}
-
 .mobileNav {
   display: none;
   font-size: 16px;
@@ -94,7 +94,7 @@ body {
   cursor: pointer;
 }
 .mobileNav .nav-link {
-  color: #000 !important;
+  color: #000;
 }
 .mobileNav .small-link {
   color: #fff !important;
@@ -1723,7 +1723,6 @@ fieldset .sold {
   }
   .mobileNav {
     display: block;
-    position: sticky;
     top: 10px;
     z-index: 10;
     background: #fff;

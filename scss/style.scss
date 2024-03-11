@@ -111,6 +111,11 @@ body{
 .fixed-top-wishlist{
   background: none;
 }
+
+.navBtn-wishlist{
+  background-color:  #2F2F2F !important;
+
+}
 // wishlist end
 .largeScreenNav{
     display: flex;
@@ -154,9 +159,7 @@ color: black;
   border: none !important;
   background: white;
 }
-.btnnav{
-  background: #2f2f2f;
-}
+
 .mobileNav{
   display: none;
 font-size: 16px;
@@ -167,7 +170,7 @@ z-index: 100;
   cursor: pointer;
 }
 .nav-link{
-  color: #000 !important;
+   color: #000;
 }
 .small-link{
   color: #fff !important;
@@ -879,21 +882,7 @@ font-weight: 400;
 }
 }
 
-// @keyframes cursor{
-//   50%{
-//     border-color: transparent;
-//   }
 
-
-// }
-
-
-// @keyframes typing{
-//   from{
-//     width: 0;
-//   }
-
-// }
 
 
 .slider-sec{
@@ -1940,7 +1929,7 @@ color: #ffffff !important;
   }
   .mobileNav{
 display: block;
-position: sticky;
+
 top:10px;
 z-index: 10;
 background: #fff;
