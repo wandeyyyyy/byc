@@ -1710,6 +1710,13 @@ fieldset .sold {
     width: 100%;
   }
 }
+.accordion-button:not(.collapsed), .accordion-button {
+  background-color: var(--brand-colour-1, #BD3A3A) !important;
+  color: #ffffff;
+  font-weight: 600;
+  outline: none;
+}
+
 @media only screen and (max-width: 992px) {
   .largeScreenNav {
     display: none;

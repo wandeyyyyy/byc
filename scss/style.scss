@@ -1925,9 +1925,18 @@ color: #ffffff !important;
 }
 
 
+
+.accordion-button:not(.collapsed), .accordion-button{
+  background-color: $redcolor !important;
+  color: #ffffff;
+  font-weight: 600;
+  outline: none;
+}
+
+
 @media only screen and (max-width: 992px) {
   .largeScreenNav{
-    display: none;
+    display: none; 
   }
   .mobileNav{
 display: block;
@@ -1982,12 +1991,7 @@ background: #fff;
 .imageA{
   margin-bottom: 10%;
 }
-// .viewBtn{
- 
-//   // button{
-//   //   // width: 95% !important;
-//   // }
-// }
+
 }
 
 
@@ -2071,16 +2075,7 @@ footer{
   }
 }
 
-// blog styling begins
 
-// .heading{
-//   .glitch{
-//     border-right: none;
-//   animation: none;
-//   white-space: wrap !important;
-//   width: 100%;
-//   }
-// }
 .section1-blog{
  margin-top: 25%; 
   .blog-sect{
@@ -2366,4 +2361,3 @@ flex-direction: column;
 
 
 
-// index page pagination
