@@ -1640,6 +1640,10 @@ fieldset .sold {
   font-weight: 400;
 }
 
+.round {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .section-byc button {
     width: 80% !important;

@@ -37,6 +37,10 @@ body {
   background: none;
 }
 
+.navBtn-wishlist {
+  background-color: #2F2F2F !important;
+}
+
 .largeScreenNav {
   display: flex;
   justify-content: space-between;
@@ -79,10 +83,6 @@ body {
   background: white;
 }
 
-.btnnav {
-  background: #2f2f2f;
-}
-
 .mobileNav {
   display: none;
   font-size: 16px;
@@ -94,7 +94,7 @@ body {
   cursor: pointer;
 }
 .mobileNav .nav-link {
-  color: #000 !important;
+  color: #000;
 }
 .mobileNav .small-link {
   color: #fff !important;
@@ -744,6 +744,19 @@ footer .copy {
   font-size: 16px;
   color: #424242;
   font-weight: 400;
+}
+
+.err-btn {
+  color: #ffffff;
+  background-color: #D7000F;
+  border: none;
+  padding: 8px 20px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.helerror {
+  padding: 50px 0;
 }
 
 .slider-sec .down-slider {
@@ -1620,7 +1633,7 @@ fieldset .sold {
 }
 .section-cartItem .buttonCreate {
   position: absolute;
-  top: 80%;
+  top: 73.2%;
 }
 .section-cartItem .createAcct {
   position: relative;
@@ -1631,6 +1644,10 @@ fieldset .sold {
 }
 .section-cartItem .email, .section-cartItem .password {
   font-weight: 400;
+}
+
+.round {
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1716,13 +1733,19 @@ fieldset .sold {
     width: 100%;
   }
 }
+.accordion-button:not(.collapsed), .accordion-button {
+  background-color: var(--brand-colour-1, #BD3A3A) !important;
+  color: #ffffff;
+  font-weight: 600;
+  outline: none;
+}
+
 @media only screen and (max-width: 992px) {
   .largeScreenNav {
     display: none;
   }
   .mobileNav {
     display: block;
-    position: sticky;
     top: 10px;
     z-index: 10;
     background: #fff;
