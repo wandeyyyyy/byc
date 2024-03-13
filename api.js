@@ -23,7 +23,7 @@ Swal.fire({
     const myHeader = new Headers();
 
     myHeader.append("Content-Type", "application/json");
-    const profile = JSON.stringify({
+    const reqBody = JSON.stringify({
       email: getEmail,
       password: getPassword,
     });
@@ -31,7 +31,7 @@ Swal.fire({
     const signMethod = {
       method: "POST",
       headers: myHeader,
-      body: profile,
+      body: reqBody,
     };
 
     const url = "http://localhost:4000/api/bycauths";
@@ -41,24 +41,20 @@ Swal.fire({
       .then((result) => {
         
         console.log(result);
-        localStorage.setItem("admin", JSON.stringify(result));
-
-        if (result.user.hasOwnProperty("email")) {
+        if (result.token) {
+          localStorage.setItem("token", result.token);
           setTimeout(() => {
-            location.href = "allproducts.html"
-        }, 3000)
-        
-          } else {
+              location.href = "allproducts.html";
+          }, 3000);
+      } else {
           Swal.fire({
-            icon: "info",
-            text: "Login Unsuccessful!",
-            confirmButtonColor: "#D7000F",
+              icon: "info",
+              text: `${result.error}`,
+              confirmButtonColor: "#D7000F",
           });
-        }
           getSpin.style.display = "none";
-        }
-      )
-      .catch((error) => console.log("error", error));
-  }
-
+      }
+  })
+  .catch(error => console.error("Error:", error));
 }
+      }
