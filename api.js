@@ -34,25 +34,30 @@ Swal.fire({
       body: profile,
     };
 
-    const url = "http://localhost:3000/api/bycauths";
+    const url = "http://localhost:4000/api/bycauths";
 
     fetch(url, signMethod)
       .then((response) => response.json())
       .then((result) => {
+        
         console.log(result);
         localStorage.setItem("admin", JSON.stringify(result));
 
         if (result.user.hasOwnProperty("email")) {
-          location.href = "Allproducts.html";
-        } else {
+          setTimeout(() => {
+            location.href = "allproducts.html"
+        }, 3000)
+        
+          } else {
           Swal.fire({
             icon: "info",
             text: "Login Unsuccessful!",
             confirmButtonColor: "#D7000F",
           });
+        }
           getSpin.style.display = "none";
         }
-      })
+      )
       .catch((error) => console.log("error", error));
   }
 
