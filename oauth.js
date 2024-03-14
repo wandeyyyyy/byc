@@ -1,3 +1,3 @@
-if (!localStorage.getItem("admin")) {
+if (!localStorage.getItem("token")) {
     location.href = "error.html";
 }
